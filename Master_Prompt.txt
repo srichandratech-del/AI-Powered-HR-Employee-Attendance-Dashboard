@@ -1,0 +1,43 @@
+Master Prompt
+
+Act as a Senior Data Visualization Expert and Frontend Developer. 
+
+I am attaching/pasting a CSV dataset named "Employees_1000_Styled_Data.csv". Generate a single-file, production-ready, interactive HTML/CSS/JS HR & Employee Attendance Dashboard inside Gemini Canvas based on this dataset.
+
+### Dataset Schema & Column Details:
+- Columns: EMP ID, NAME, DEPARTMENT, MONTH, ATTENDANCE, STATUS, LEAVE TYPE, KPI SCORE, SATISFACTION
+
+### Visual & Layout Requirements:
+1. Top Navigation Bar:
+   - Left: Dashboard Title "HR & Employee Attendance Dashboard" with an HR/people icon.
+   - Right: Quick Links ("View Source Dataset", "Setup Guide") and a working Dark/Light Mode toggle.
+
+2. Sidebar (Interactive Filters):
+   - Title: "Interactive Filters" with a slicer icon.
+   - Month Dropdown: "All Months (Overall)", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December".
+   - Status Dropdown: "All Statuses", "In Stock", "Reserved".
+   - Leave Type Dropdown: "All Leave Types", "Casual Leave", "Special Leave".
+   - Slicer Controls: "Clear Slicers" button and a green "Real-time sync active" badge.
+
+3. Top Row KPI Summary Cards (5 Cards):
+   - Total Employees: Count of unique 'EMP ID' (Total: 1,000).
+   - Average Attendance Rate: Average parsed percentage from 'ATTENDANCE' (e.g., 88%).
+   - Active Status Base: Count of records with Status = 'In Stock'.
+   - Average KPI Score: Average score extracted from 'KPI SCORE' (e.g., 75 / 100).
+   - Satisfaction Index: Average rating calculated from 'SATISFACTION' (e.g., 4 ★).
+
+4. Main Dashboard Grid (Visualizations using Chart.js CDN):
+   - Line Chart: "Monthly Attendance Trend" (Attendance rate across months from January to December).
+   - Donut Chart: "Employee Status Split" (Percentage distribution of 'In Stock' vs 'Reserved').
+   - Pie Chart: "Leave Type Breakdown" (Share between 'Casual Leave' and 'Special Leave').
+   - Bar Chart: "Employee Count by Month" (Monthly headcount distribution).
+   - Horizontal Bar Chart: "Department Performance & KPI Ratings".
+
+### Dynamic Logic & Technical Requirements:
+- Write client-side JS to parse percentages (removing '%') and numerical scores (extracting numbers before '/ 100' or '★').
+- Ensure all 5 KPI cards and charts dynamically update when changing the Month, Status, or Leave Type slicer filters.
+- Use rounded container card styling, CSS flex/grid layout, smooth hover states, and complete Dark/Light mode theme switching.
+- Output everything in a single, fully functional `<!DOCTYPE html>` file with Chart.js included via CDN so it renders instantly in Canvas and can be directly downloaded.
+
+Here is the CSV data:
+[ATTACH OR PASTE Employees_1000_Styled_Data.csv HERE]

@@ -1,0 +1,1001 @@
+﻿EMP ID,NAME,DEPARTMENT,MONTH,ATTENDANCE,STATUS,LEAVE TYPE,KPI SCORE,SATISFACTION
+EMP-1001,Employee 1,Customer Support,April,71%,Reserved,Vacation,69 / 100,2 ★
+EMP-1002,Employee 2,Marketing,November,90%,In Stock,Casual Leave,89 / 100,5 ★
+EMP-1003,Employee 3,Marketing,September,82%,Reserved,None,72 / 100,3 ★
+EMP-1004,Employee 4,Finance,September,86%,In Stock,None,90 / 100,5 ★
+EMP-1005,Employee 5,Marketing,December,88%,In Stock,Sick Leave,82 / 100,5 ★
+EMP-1006,Employee 6,Administration,January,70%,Reserved,Vacation,76 / 100,3 ★
+EMP-1007,Employee 7,R&D,April,91%,Reserved,None,92 / 100,4 ★
+EMP-1008,Employee 8,Procurement,September,74%,Reserved,Special Leave,80 / 100,3 ★
+EMP-1009,Employee 9,Sales,July,80%,In Stock,Casual Leave,86 / 100,5 ★
+EMP-1010,Employee 10,Marketing,February,95%,Reserved,Casual Leave,94 / 100,4 ★
+EMP-1011,Employee 11,Marketing,August,96%,In Stock,None,97 / 100,5 ★
+EMP-1012,Employee 12,Marketing,July,86%,In Stock,None,85 / 100,3 ★
+EMP-1013,Employee 13,Customer Support,September,79%,On Leave,Special Leave,78 / 100,4 ★
+EMP-1014,Employee 14,Engineering,February,89%,Reserved,Sick Leave,75 / 100,3 ★
+EMP-1015,Employee 15,Procurement,March,84%,In Stock,Casual Leave,73 / 100,4 ★
+EMP-1016,Employee 16,Customer Support,June,72%,Reserved,Vacation,63 / 100,4 ★
+EMP-1017,Employee 17,Legal,September,100%,In Stock,None,98 / 100,5 ★
+EMP-1018,Employee 18,R&D,June,95%,In Stock,Casual Leave,95 / 100,5 ★
+EMP-1019,Employee 19,Legal,October,80%,In Stock,Casual Leave,81 / 100,4 ★
+EMP-1020,Employee 20,Customer Support,March,70%,On Leave,Sick Leave,66 / 100,3 ★
+EMP-1021,Employee 21,Administration,April,97%,In Stock,None,96 / 100,5 ★
+EMP-1022,Employee 22,Sales,December,77%,On Leave,Special Leave,79 / 100,3 ★
+EMP-1023,Employee 23,Procurement,September,79%,Reserved,Sick Leave,78 / 100,2 ★
+EMP-1024,Employee 24,Customer Support,March,92%,In Stock,Casual Leave,83 / 100,5 ★
+EMP-1025,Employee 25,Legal,September,85%,Reserved,None,77 / 100,4 ★
+EMP-1026,Employee 26,Marketing,November,78%,Reserved,Vacation,78 / 100,2 ★
+EMP-1027,Employee 27,HR,June,77%,Reserved,Special Leave,69 / 100,4 ★
+EMP-1028,Employee 28,Administration,November,78%,On Leave,Special Leave,75 / 100,4 ★
+EMP-1029,Employee 29,Sales,January,99%,In Stock,None,95 / 100,5 ★
+EMP-1030,Employee 30,Legal,June,77%,On Leave,Special Leave,75 / 100,3 ★
+EMP-1031,Employee 31,Operations,February,70%,Reserved,Vacation,80 / 100,4 ★
+EMP-1032,Employee 32,HR,August,100%,In Stock,None,91 / 100,5 ★
+EMP-1033,Employee 33,Operations,January,83%,In Stock,None,89 / 100,3 ★
+EMP-1034,Employee 34,Marketing,August,79%,Reserved,Vacation,62 / 100,3 ★
+EMP-1035,Employee 35,R&D,June,100%,In Stock,None,94 / 100,5 ★
+EMP-1036,Employee 36,R&D,November,79%,Reserved,Vacation,73 / 100,2 ★
+EMP-1037,Employee 37,Procurement,October,96%,In Stock,None,91 / 100,5 ★
+EMP-1038,Employee 38,Customer Support,March,85%,Reserved,None,74 / 100,3 ★
+EMP-1039,Employee 39,Customer Support,September,98%,In Stock,None,98 / 100,5 ★
+EMP-1040,Employee 40,Marketing,March,74%,On Leave,Vacation,64 / 100,2 ★
+EMP-1041,Employee 41,Marketing,July,70%,On Leave,Special Leave,60 / 100,4 ★
+EMP-1042,Employee 42,Administration,February,73%,Reserved,Sick Leave,64 / 100,3 ★
+EMP-1043,Employee 43,Administration,February,79%,On Leave,Vacation,60 / 100,4 ★
+EMP-1044,Employee 44,Legal,May,92%,In Stock,Casual Leave,90 / 100,4 ★
+EMP-1045,Employee 45,HR,June,76%,On Leave,Vacation,73 / 100,4 ★
+EMP-1046,Employee 46,Administration,May,76%,Reserved,Vacation,80 / 100,3 ★
+EMP-1047,Employee 47,Customer Support,October,74%,On Leave,Vacation,67 / 100,2 ★
+EMP-1048,Employee 48,R&D,July,92%,In Stock,Casual Leave,84 / 100,5 ★
+EMP-1049,Employee 49,Administration,November,85%,In Stock,Casual Leave,75 / 100,4 ★
+EMP-1050,Employee 50,Procurement,October,89%,In Stock,None,78 / 100,4 ★
+EMP-1051,Employee 51,Customer Support,August,76%,On Leave,Special Leave,60 / 100,3 ★
+EMP-1052,Employee 52,Engineering,June,89%,Reserved,Casual Leave,83 / 100,3 ★
+EMP-1053,Employee 53,HR,January,73%,Reserved,Vacation,64 / 100,4 ★
+EMP-1054,Employee 54,Administration,May,81%,Reserved,Casual Leave,75 / 100,5 ★
+EMP-1055,Employee 55,Engineering,December,89%,In Stock,None,88 / 100,5 ★
+EMP-1056,Employee 56,IT,May,84%,In Stock,Sick Leave,78 / 100,4 ★
+EMP-1057,Employee 57,Procurement,November,89%,Reserved,Sick Leave,77 / 100,4 ★
+EMP-1058,Employee 58,R&D,March,81%,In Stock,None,86 / 100,3 ★
+EMP-1059,Employee 59,Operations,January,81%,Reserved,Sick Leave,89 / 100,4 ★
+EMP-1060,Employee 60,R&D,July,81%,Reserved,None,89 / 100,5 ★
+EMP-1061,Employee 61,Operations,February,78%,On Leave,Sick Leave,60 / 100,4 ★
+EMP-1062,Employee 62,Marketing,February,91%,Reserved,Casual Leave,95 / 100,5 ★
+EMP-1063,Employee 63,Marketing,February,70%,Reserved,Vacation,70 / 100,3 ★
+EMP-1064,Employee 64,Customer Support,December,97%,In Stock,None,92 / 100,5 ★
+EMP-1065,Employee 65,IT,June,86%,Reserved,None,74 / 100,5 ★
+EMP-1066,Employee 66,Engineering,May,96%,In Stock,None,98 / 100,5 ★
+EMP-1067,Employee 67,Customer Support,May,73%,Reserved,Sick Leave,71 / 100,2 ★
+EMP-1068,Employee 68,IT,December,81%,In Stock,Casual Leave,72 / 100,3 ★
+EMP-1069,Employee 69,HR,April,89%,Reserved,Sick Leave,72 / 100,4 ★
+EMP-1070,Employee 70,IT,March,98%,In Stock,None,93 / 100,5 ★
+EMP-1071,Employee 71,Operations,March,81%,In Stock,Casual Leave,80 / 100,5 ★
+EMP-1072,Employee 72,IT,April,100%,In Stock,None,96 / 100,5 ★
+EMP-1073,Employee 73,Finance,March,92%,Reserved,Casual Leave,93 / 100,4 ★
+EMP-1074,Employee 74,Marketing,November,95%,In Stock,Casual Leave,87 / 100,4 ★
+EMP-1075,Employee 75,R&D,May,95%,In Stock,Casual Leave,86 / 100,5 ★
+EMP-1076,Employee 76,Sales,October,83%,Reserved,None,79 / 100,4 ★
+EMP-1077,Employee 77,Marketing,January,93%,In Stock,None,85 / 100,5 ★
+EMP-1078,Employee 78,Sales,May,84%,Reserved,Sick Leave,80 / 100,3 ★
+EMP-1079,Employee 79,Engineering,October,73%,On Leave,Sick Leave,76 / 100,2 ★
+EMP-1080,Employee 80,HR,September,85%,Reserved,Sick Leave,76 / 100,3 ★
+EMP-1081,Employee 81,Sales,September,71%,On Leave,Sick Leave,60 / 100,4 ★
+EMP-1082,Employee 82,Engineering,April,76%,Reserved,Sick Leave,79 / 100,4 ★
+EMP-1083,Employee 83,Engineering,February,72%,Reserved,Special Leave,77 / 100,4 ★
+EMP-1084,Employee 84,Customer Support,October,80%,In Stock,None,83 / 100,3 ★
+EMP-1085,Employee 85,Finance,June,89%,In Stock,None,86 / 100,3 ★
+EMP-1086,Employee 86,Legal,September,72%,On Leave,Sick Leave,72 / 100,4 ★
+EMP-1087,Employee 87,Legal,February,88%,Reserved,None,70 / 100,4 ★
+EMP-1088,Employee 88,Engineering,July,94%,Reserved,Casual Leave,83 / 100,5 ★
+EMP-1089,Employee 89,Procurement,February,100%,In Stock,None,96 / 100,5 ★
+EMP-1090,Employee 90,HR,December,75%,Reserved,Sick Leave,75 / 100,2 ★
+EMP-1091,Employee 91,Marketing,October,99%,In Stock,None,90 / 100,5 ★
+EMP-1092,Employee 92,Finance,February,99%,In Stock,None,90 / 100,5 ★
+EMP-1093,Employee 93,Customer Support,April,86%,In Stock,Sick Leave,77 / 100,5 ★
+EMP-1094,Employee 94,Finance,May,74%,On Leave,Sick Leave,74 / 100,4 ★
+EMP-1095,Employee 95,R&D,July,90%,In Stock,Casual Leave,93 / 100,5 ★
+EMP-1096,Employee 96,R&D,May,78%,On Leave,Sick Leave,73 / 100,3 ★
+EMP-1097,Employee 97,Legal,August,73%,On Leave,Special Leave,76 / 100,2 ★
+EMP-1098,Employee 98,Legal,December,75%,Reserved,Sick Leave,79 / 100,2 ★
+EMP-1099,Employee 99,R&D,September,72%,Reserved,Sick Leave,79 / 100,3 ★
+EMP-1100,Employee 100,HR,May,86%,In Stock,Casual Leave,70 / 100,3 ★
+EMP-1101,Employee 101,Procurement,August,88%,In Stock,None,89 / 100,3 ★
+EMP-1102,Employee 102,R&D,August,84%,In Stock,Casual Leave,84 / 100,3 ★
+EMP-1103,Employee 103,Engineering,April,97%,In Stock,None,97 / 100,5 ★
+EMP-1104,Employee 104,HR,December,88%,Reserved,Sick Leave,73 / 100,4 ★
+EMP-1105,Employee 105,R&D,January,87%,Reserved,None,79 / 100,3 ★
+EMP-1106,Employee 106,IT,February,72%,On Leave,Vacation,80 / 100,4 ★
+EMP-1107,Employee 107,Legal,September,100%,In Stock,None,95 / 100,5 ★
+EMP-1108,Employee 108,Procurement,May,85%,Reserved,None,87 / 100,5 ★
+EMP-1109,Employee 109,HR,May,88%,In Stock,Sick Leave,73 / 100,5 ★
+EMP-1110,Employee 110,Procurement,October,98%,In Stock,None,94 / 100,5 ★
+EMP-1111,Employee 111,Administration,May,73%,On Leave,Special Leave,79 / 100,2 ★
+EMP-1112,Employee 112,Legal,November,93%,Reserved,None,94 / 100,4 ★
+EMP-1113,Employee 113,Finance,December,74%,On Leave,Sick Leave,63 / 100,2 ★
+EMP-1114,Employee 114,Engineering,March,78%,On Leave,Special Leave,67 / 100,2 ★
+EMP-1115,Employee 115,Operations,December,72%,Reserved,Special Leave,66 / 100,3 ★
+EMP-1116,Employee 116,Customer Support,April,90%,In Stock,Casual Leave,88 / 100,5 ★
+EMP-1117,Employee 117,Procurement,October,98%,In Stock,None,98 / 100,5 ★
+EMP-1118,Employee 118,R&D,April,76%,Reserved,Sick Leave,73 / 100,4 ★
+EMP-1119,Employee 119,HR,April,71%,Reserved,Special Leave,72 / 100,4 ★
+EMP-1120,Employee 120,Legal,January,99%,In Stock,None,92 / 100,5 ★
+EMP-1121,Employee 121,HR,May,83%,In Stock,Sick Leave,76 / 100,4 ★
+EMP-1122,Employee 122,Procurement,January,91%,Reserved,Casual Leave,82 / 100,5 ★
+EMP-1123,Employee 123,IT,August,82%,In Stock,None,84 / 100,5 ★
+EMP-1124,Employee 124,Sales,July,79%,On Leave,Vacation,66 / 100,2 ★
+EMP-1125,Employee 125,Legal,August,75%,Reserved,Sick Leave,74 / 100,4 ★
+EMP-1126,Employee 126,Marketing,April,98%,In Stock,None,98 / 100,5 ★
+EMP-1127,Employee 127,HR,July,97%,In Stock,None,90 / 100,5 ★
+EMP-1128,Employee 128,IT,June,73%,Reserved,Vacation,74 / 100,4 ★
+EMP-1129,Employee 129,IT,January,95%,Reserved,None,86 / 100,5 ★
+EMP-1130,Employee 130,IT,April,81%,In Stock,Casual Leave,84 / 100,4 ★
+EMP-1131,Employee 131,Procurement,April,73%,Reserved,Sick Leave,65 / 100,4 ★
+EMP-1132,Employee 132,R&D,February,75%,Reserved,Vacation,74 / 100,2 ★
+EMP-1133,Employee 133,Administration,February,87%,Reserved,Casual Leave,85 / 100,4 ★
+EMP-1134,Employee 134,Finance,May,85%,In Stock,Sick Leave,78 / 100,4 ★
+EMP-1135,Employee 135,Finance,September,71%,On Leave,Vacation,62 / 100,3 ★
+EMP-1136,Employee 136,Finance,April,92%,Reserved,Casual Leave,95 / 100,4 ★
+EMP-1137,Employee 137,Procurement,April,83%,In Stock,Sick Leave,85 / 100,5 ★
+EMP-1138,Employee 138,IT,March,81%,In Stock,Sick Leave,89 / 100,4 ★
+EMP-1139,Employee 139,Finance,July,73%,Reserved,Special Leave,69 / 100,2 ★
+EMP-1140,Employee 140,HR,July,77%,On Leave,Vacation,73 / 100,4 ★
+EMP-1141,Employee 141,Procurement,July,80%,Reserved,Sick Leave,73 / 100,3 ★
+EMP-1142,Employee 142,Customer Support,September,75%,On Leave,Sick Leave,60 / 100,2 ★
+EMP-1143,Employee 143,Operations,January,79%,Reserved,Special Leave,79 / 100,2 ★
+EMP-1144,Employee 144,Customer Support,September,73%,On Leave,Vacation,68 / 100,3 ★
+EMP-1145,Employee 145,Operations,July,80%,Reserved,None,70 / 100,4 ★
+EMP-1146,Employee 146,Administration,December,71%,On Leave,Sick Leave,75 / 100,3 ★
+EMP-1147,Employee 147,Finance,November,76%,Reserved,Vacation,63 / 100,3 ★
+EMP-1148,Employee 148,Sales,January,85%,Reserved,Casual Leave,72 / 100,3 ★
+EMP-1149,Employee 149,IT,January,90%,Reserved,None,92 / 100,5 ★
+EMP-1150,Employee 150,Administration,December,92%,Reserved,Casual Leave,83 / 100,5 ★
+EMP-1151,Employee 151,Customer Support,July,82%,Reserved,Casual Leave,90 / 100,5 ★
+EMP-1152,Employee 152,Legal,September,70%,Reserved,Special Leave,68 / 100,3 ★
+EMP-1153,Employee 153,R&D,March,91%,In Stock,None,86 / 100,5 ★
+EMP-1154,Employee 154,Administration,March,81%,In Stock,Sick Leave,77 / 100,5 ★
+EMP-1155,Employee 155,Sales,December,75%,On Leave,Sick Leave,77 / 100,4 ★
+EMP-1156,Employee 156,Procurement,April,98%,In Stock,None,93 / 100,5 ★
+EMP-1157,Employee 157,Marketing,January,78%,On Leave,Special Leave,63 / 100,4 ★
+EMP-1158,Employee 158,Customer Support,December,82%,In Stock,None,73 / 100,5 ★
+EMP-1159,Employee 159,Engineering,October,99%,In Stock,None,96 / 100,5 ★
+EMP-1160,Employee 160,Marketing,August,82%,Reserved,None,81 / 100,5 ★
+EMP-1161,Employee 161,Finance,September,96%,In Stock,None,97 / 100,5 ★
+EMP-1162,Employee 162,Legal,June,73%,On Leave,Sick Leave,69 / 100,3 ★
+EMP-1163,Employee 163,Engineering,November,93%,Reserved,None,90 / 100,5 ★
+EMP-1164,Employee 164,Engineering,April,94%,In Stock,None,90 / 100,4 ★
+EMP-1165,Employee 165,R&D,March,84%,Reserved,Casual Leave,77 / 100,5 ★
+EMP-1166,Employee 166,Finance,April,88%,Reserved,None,82 / 100,3 ★
+EMP-1167,Employee 167,HR,October,87%,In Stock,None,80 / 100,3 ★
+EMP-1168,Employee 168,Operations,October,76%,On Leave,Special Leave,65 / 100,4 ★
+EMP-1169,Employee 169,Sales,September,85%,In Stock,None,74 / 100,5 ★
+EMP-1170,Employee 170,Sales,March,86%,In Stock,Casual Leave,84 / 100,5 ★
+EMP-1171,Employee 171,Sales,April,75%,On Leave,Vacation,74 / 100,2 ★
+EMP-1172,Employee 172,Procurement,May,77%,Reserved,Sick Leave,60 / 100,3 ★
+EMP-1173,Employee 173,R&D,December,79%,Reserved,Sick Leave,78 / 100,2 ★
+EMP-1174,Employee 174,IT,May,90%,In Stock,None,83 / 100,5 ★
+EMP-1175,Employee 175,Sales,October,78%,On Leave,Special Leave,80 / 100,2 ★
+EMP-1176,Employee 176,Customer Support,August,83%,In Stock,Casual Leave,74 / 100,3 ★
+EMP-1177,Employee 177,Sales,October,75%,On Leave,Sick Leave,65 / 100,4 ★
+EMP-1178,Employee 178,IT,January,87%,In Stock,None,77 / 100,4 ★
+EMP-1179,Employee 179,Operations,December,96%,In Stock,None,94 / 100,5 ★
+EMP-1180,Employee 180,Procurement,January,79%,On Leave,Vacation,64 / 100,2 ★
+EMP-1181,Employee 181,Legal,May,72%,Reserved,Sick Leave,67 / 100,3 ★
+EMP-1182,Employee 182,Finance,April,81%,In Stock,None,88 / 100,4 ★
+EMP-1183,Employee 183,Finance,March,74%,On Leave,Special Leave,68 / 100,4 ★
+EMP-1184,Employee 184,Procurement,January,71%,Reserved,Vacation,78 / 100,2 ★
+EMP-1185,Employee 185,R&D,December,77%,Reserved,Vacation,74 / 100,3 ★
+EMP-1186,Employee 186,Procurement,December,92%,In Stock,Casual Leave,94 / 100,5 ★
+EMP-1187,Employee 187,Finance,July,100%,In Stock,None,90 / 100,5 ★
+EMP-1188,Employee 188,Engineering,January,72%,Reserved,Sick Leave,79 / 100,4 ★
+EMP-1189,Employee 189,Legal,May,79%,On Leave,Sick Leave,60 / 100,2 ★
+EMP-1190,Employee 190,Finance,September,94%,In Stock,None,95 / 100,5 ★
+EMP-1191,Employee 191,Procurement,March,93%,In Stock,Casual Leave,88 / 100,4 ★
+EMP-1192,Employee 192,Engineering,April,72%,On Leave,Vacation,73 / 100,4 ★
+EMP-1193,Employee 193,Sales,January,100%,In Stock,None,93 / 100,5 ★
+EMP-1194,Employee 194,Procurement,July,74%,Reserved,Sick Leave,79 / 100,3 ★
+EMP-1195,Employee 195,R&D,June,91%,In Stock,None,93 / 100,5 ★
+EMP-1196,Employee 196,Customer Support,August,79%,Reserved,Vacation,71 / 100,3 ★
+EMP-1197,Employee 197,R&D,October,93%,In Stock,Casual Leave,86 / 100,5 ★
+EMP-1198,Employee 198,Sales,May,90%,In Stock,Casual Leave,86 / 100,4 ★
+EMP-1199,Employee 199,Operations,December,78%,On Leave,Special Leave,66 / 100,3 ★
+EMP-1200,Employee 200,Administration,April,70%,Reserved,Special Leave,64 / 100,2 ★
+EMP-1201,Employee 201,Marketing,February,81%,In Stock,None,87 / 100,3 ★
+EMP-1202,Employee 202,R&D,October,84%,Reserved,Casual Leave,74 / 100,5 ★
+EMP-1203,Employee 203,Sales,May,91%,In Stock,Casual Leave,95 / 100,5 ★
+EMP-1204,Employee 204,Customer Support,April,74%,On Leave,Vacation,71 / 100,4 ★
+EMP-1205,Employee 205,Customer Support,December,86%,In Stock,Casual Leave,84 / 100,4 ★
+EMP-1206,Employee 206,Finance,November,73%,On Leave,Vacation,67 / 100,4 ★
+EMP-1207,Employee 207,HR,February,83%,In Stock,Casual Leave,89 / 100,5 ★
+EMP-1208,Employee 208,Customer Support,May,80%,Reserved,None,79 / 100,4 ★
+EMP-1209,Employee 209,Procurement,August,72%,Reserved,Sick Leave,63 / 100,3 ★
+EMP-1210,Employee 210,Procurement,July,91%,Reserved,Casual Leave,89 / 100,5 ★
+EMP-1211,Employee 211,R&D,April,98%,In Stock,None,90 / 100,5 ★
+EMP-1212,Employee 212,IT,March,82%,In Stock,Sick Leave,87 / 100,4 ★
+EMP-1213,Employee 213,R&D,September,96%,In Stock,None,99 / 100,5 ★
+EMP-1214,Employee 214,Customer Support,November,86%,Reserved,None,78 / 100,5 ★
+EMP-1215,Employee 215,Operations,March,79%,On Leave,Special Leave,62 / 100,2 ★
+EMP-1216,Employee 216,Finance,November,91%,Reserved,Casual Leave,90 / 100,4 ★
+EMP-1217,Employee 217,Marketing,April,93%,In Stock,None,84 / 100,4 ★
+EMP-1218,Employee 218,Sales,January,85%,In Stock,Casual Leave,90 / 100,4 ★
+EMP-1219,Employee 219,Sales,April,72%,On Leave,Sick Leave,71 / 100,2 ★
+EMP-1220,Employee 220,Operations,March,99%,In Stock,None,99 / 100,5 ★
+EMP-1221,Employee 221,IT,August,100%,In Stock,None,92 / 100,5 ★
+EMP-1222,Employee 222,Procurement,October,74%,Reserved,Special Leave,65 / 100,3 ★
+EMP-1223,Employee 223,R&D,December,77%,On Leave,Sick Leave,67 / 100,4 ★
+EMP-1224,Employee 224,Customer Support,August,99%,In Stock,None,100 / 100,5 ★
+EMP-1225,Employee 225,Legal,January,70%,Reserved,Special Leave,60 / 100,2 ★
+EMP-1226,Employee 226,Procurement,May,80%,Reserved,Sick Leave,82 / 100,3 ★
+EMP-1227,Employee 227,Engineering,July,76%,On Leave,Special Leave,67 / 100,4 ★
+EMP-1228,Employee 228,Sales,January,96%,In Stock,None,91 / 100,5 ★
+EMP-1229,Employee 229,Sales,April,89%,In Stock,None,80 / 100,5 ★
+EMP-1230,Employee 230,Sales,September,73%,On Leave,Sick Leave,63 / 100,3 ★
+EMP-1231,Employee 231,R&D,May,73%,On Leave,Vacation,79 / 100,2 ★
+EMP-1232,Employee 232,Operations,February,75%,Reserved,Vacation,67 / 100,3 ★
+EMP-1233,Employee 233,HR,November,89%,Reserved,Casual Leave,89 / 100,4 ★
+EMP-1234,Employee 234,IT,January,80%,In Stock,Sick Leave,84 / 100,3 ★
+EMP-1235,Employee 235,HR,December,86%,In Stock,Sick Leave,80 / 100,5 ★
+EMP-1236,Employee 236,R&D,December,74%,On Leave,Sick Leave,61 / 100,4 ★
+EMP-1237,Employee 237,Engineering,October,74%,Reserved,Vacation,72 / 100,2 ★
+EMP-1238,Employee 238,R&D,November,98%,In Stock,None,91 / 100,5 ★
+EMP-1239,Employee 239,Marketing,October,85%,In Stock,None,76 / 100,3 ★
+EMP-1240,Employee 240,Customer Support,December,71%,Reserved,Special Leave,63 / 100,3 ★
+EMP-1241,Employee 241,Finance,December,73%,Reserved,Sick Leave,80 / 100,4 ★
+EMP-1242,Employee 242,Sales,June,82%,In Stock,None,71 / 100,5 ★
+EMP-1243,Employee 243,Engineering,January,80%,In Stock,Casual Leave,86 / 100,4 ★
+EMP-1244,Employee 244,Finance,July,95%,In Stock,None,84 / 100,4 ★
+EMP-1245,Employee 245,Engineering,September,94%,In Stock,None,87 / 100,5 ★
+EMP-1246,Employee 246,Legal,February,92%,In Stock,None,89 / 100,5 ★
+EMP-1247,Employee 247,IT,April,81%,In Stock,Sick Leave,80 / 100,4 ★
+EMP-1248,Employee 248,IT,May,100%,In Stock,None,98 / 100,5 ★
+EMP-1249,Employee 249,Sales,November,76%,Reserved,Vacation,77 / 100,2 ★
+EMP-1250,Employee 250,Administration,February,77%,Reserved,Sick Leave,73 / 100,3 ★
+EMP-1251,Employee 251,Finance,October,94%,In Stock,None,90 / 100,4 ★
+EMP-1252,Employee 252,Sales,June,84%,In Stock,Sick Leave,87 / 100,4 ★
+EMP-1253,Employee 253,HR,February,72%,Reserved,Vacation,78 / 100,4 ★
+EMP-1254,Employee 254,Marketing,July,70%,On Leave,Sick Leave,63 / 100,2 ★
+EMP-1255,Employee 255,Administration,May,76%,On Leave,Sick Leave,75 / 100,2 ★
+EMP-1256,Employee 256,Administration,June,96%,In Stock,None,90 / 100,5 ★
+EMP-1257,Employee 257,Marketing,October,88%,In Stock,None,70 / 100,4 ★
+EMP-1258,Employee 258,R&D,September,75%,Reserved,Sick Leave,76 / 100,4 ★
+EMP-1259,Employee 259,Marketing,February,70%,Reserved,Sick Leave,76 / 100,3 ★
+EMP-1260,Employee 260,R&D,May,85%,In Stock,Sick Leave,78 / 100,4 ★
+EMP-1261,Employee 261,Administration,October,98%,In Stock,None,95 / 100,5 ★
+EMP-1262,Employee 262,Sales,October,76%,On Leave,Vacation,60 / 100,4 ★
+EMP-1263,Employee 263,Engineering,July,82%,In Stock,None,81 / 100,3 ★
+EMP-1264,Employee 264,Sales,December,89%,In Stock,Sick Leave,71 / 100,5 ★
+EMP-1265,Employee 265,Operations,September,74%,Reserved,Special Leave,66 / 100,2 ★
+EMP-1266,Employee 266,Legal,August,96%,In Stock,None,99 / 100,5 ★
+EMP-1267,Employee 267,R&D,June,74%,Reserved,Special Leave,63 / 100,3 ★
+EMP-1268,Employee 268,HR,June,85%,In Stock,Sick Leave,90 / 100,5 ★
+EMP-1269,Employee 269,Finance,November,85%,Reserved,Sick Leave,83 / 100,5 ★
+EMP-1270,Employee 270,Procurement,January,99%,In Stock,None,94 / 100,5 ★
+EMP-1271,Employee 271,Operations,September,82%,Reserved,Casual Leave,72 / 100,3 ★
+EMP-1272,Employee 272,Administration,August,71%,Reserved,Sick Leave,80 / 100,4 ★
+EMP-1273,Employee 273,Customer Support,May,97%,In Stock,None,93 / 100,5 ★
+EMP-1274,Employee 274,HR,May,73%,On Leave,Sick Leave,71 / 100,4 ★
+EMP-1275,Employee 275,Legal,April,76%,On Leave,Vacation,65 / 100,2 ★
+EMP-1276,Employee 276,Administration,August,78%,On Leave,Sick Leave,73 / 100,4 ★
+EMP-1277,Employee 277,Marketing,February,75%,On Leave,Vacation,63 / 100,2 ★
+EMP-1278,Employee 278,Engineering,December,92%,In Stock,None,92 / 100,4 ★
+EMP-1279,Employee 279,Customer Support,February,83%,In Stock,Sick Leave,87 / 100,4 ★
+EMP-1280,Employee 280,Finance,April,87%,In Stock,Casual Leave,86 / 100,5 ★
+EMP-1281,Employee 281,Customer Support,August,81%,Reserved,Sick Leave,85 / 100,5 ★
+EMP-1282,Employee 282,Operations,July,82%,Reserved,None,70 / 100,3 ★
+EMP-1283,Employee 283,HR,February,78%,On Leave,Sick Leave,77 / 100,4 ★
+EMP-1284,Employee 284,Administration,July,82%,In Stock,Sick Leave,73 / 100,5 ★
+EMP-1285,Employee 285,Engineering,June,81%,In Stock,Sick Leave,78 / 100,5 ★
+EMP-1286,Employee 286,Operations,November,97%,In Stock,None,98 / 100,5 ★
+EMP-1287,Employee 287,Marketing,April,74%,Reserved,Vacation,74 / 100,3 ★
+EMP-1288,Employee 288,Finance,May,78%,On Leave,Vacation,63 / 100,2 ★
+EMP-1289,Employee 289,Marketing,January,91%,In Stock,Casual Leave,80 / 100,5 ★
+EMP-1290,Employee 290,HR,August,88%,In Stock,Casual Leave,90 / 100,4 ★
+EMP-1291,Employee 291,Engineering,June,84%,In Stock,None,84 / 100,3 ★
+EMP-1292,Employee 292,Customer Support,July,75%,On Leave,Sick Leave,76 / 100,2 ★
+EMP-1293,Employee 293,Procurement,May,75%,On Leave,Sick Leave,75 / 100,4 ★
+EMP-1294,Employee 294,Administration,March,72%,Reserved,Vacation,77 / 100,3 ★
+EMP-1295,Employee 295,Engineering,June,76%,Reserved,Special Leave,67 / 100,3 ★
+EMP-1296,Employee 296,Engineering,April,81%,In Stock,Sick Leave,85 / 100,3 ★
+EMP-1297,Employee 297,Procurement,April,71%,On Leave,Sick Leave,67 / 100,2 ★
+EMP-1298,Employee 298,Customer Support,November,74%,Reserved,Vacation,68 / 100,2 ★
+EMP-1299,Employee 299,IT,April,87%,Reserved,None,72 / 100,4 ★
+EMP-1300,Employee 300,HR,December,85%,Reserved,None,79 / 100,5 ★
+EMP-1301,Employee 301,Engineering,October,94%,In Stock,Casual Leave,84 / 100,4 ★
+EMP-1302,Employee 302,Operations,June,91%,Reserved,None,80 / 100,4 ★
+EMP-1303,Employee 303,IT,March,75%,On Leave,Sick Leave,76 / 100,3 ★
+EMP-1304,Employee 304,R&D,January,71%,Reserved,Sick Leave,68 / 100,2 ★
+EMP-1305,Employee 305,Sales,January,86%,Reserved,Casual Leave,71 / 100,5 ★
+EMP-1306,Employee 306,Procurement,December,97%,In Stock,None,98 / 100,5 ★
+EMP-1307,Employee 307,Administration,September,82%,In Stock,Casual Leave,78 / 100,3 ★
+EMP-1308,Employee 308,Operations,April,93%,In Stock,None,92 / 100,4 ★
+EMP-1309,Employee 309,Administration,January,94%,Reserved,None,95 / 100,5 ★
+EMP-1310,Employee 310,Engineering,December,81%,In Stock,None,72 / 100,3 ★
+EMP-1311,Employee 311,Sales,February,96%,In Stock,None,97 / 100,5 ★
+EMP-1312,Employee 312,IT,July,73%,On Leave,Vacation,74 / 100,2 ★
+EMP-1313,Employee 313,Finance,February,73%,Reserved,Vacation,80 / 100,4 ★
+EMP-1314,Employee 314,Legal,September,75%,Reserved,Special Leave,72 / 100,2 ★
+EMP-1315,Employee 315,Legal,July,82%,Reserved,Sick Leave,75 / 100,3 ★
+EMP-1316,Employee 316,Operations,November,95%,Reserved,None,88 / 100,4 ★
+EMP-1317,Employee 317,Sales,September,90%,Reserved,Casual Leave,94 / 100,5 ★
+EMP-1318,Employee 318,Customer Support,May,92%,Reserved,None,83 / 100,5 ★
+EMP-1319,Employee 319,Administration,December,85%,Reserved,Casual Leave,81 / 100,4 ★
+EMP-1320,Employee 320,Legal,January,99%,In Stock,None,100 / 100,5 ★
+EMP-1321,Employee 321,Administration,August,96%,In Stock,None,91 / 100,5 ★
+EMP-1322,Employee 322,HR,March,98%,In Stock,None,95 / 100,5 ★
+EMP-1323,Employee 323,Engineering,January,91%,Reserved,None,85 / 100,5 ★
+EMP-1324,Employee 324,Procurement,May,97%,In Stock,None,94 / 100,5 ★
+EMP-1325,Employee 325,Finance,August,94%,Reserved,None,85 / 100,4 ★
+EMP-1326,Employee 326,Finance,September,90%,Reserved,Casual Leave,87 / 100,4 ★
+EMP-1327,Employee 327,Legal,May,88%,In Stock,Sick Leave,80 / 100,4 ★
+EMP-1328,Employee 328,Marketing,June,81%,Reserved,None,90 / 100,3 ★
+EMP-1329,Employee 329,Sales,May,82%,Reserved,Sick Leave,78 / 100,3 ★
+EMP-1330,Employee 330,Procurement,September,71%,Reserved,Vacation,72 / 100,4 ★
+EMP-1331,Employee 331,Customer Support,March,72%,Reserved,Vacation,76 / 100,2 ★
+EMP-1332,Employee 332,Sales,November,97%,In Stock,None,93 / 100,5 ★
+EMP-1333,Employee 333,Finance,July,80%,In Stock,None,76 / 100,3 ★
+EMP-1334,Employee 334,Administration,October,81%,Reserved,Casual Leave,82 / 100,3 ★
+EMP-1335,Employee 335,Sales,May,70%,On Leave,Special Leave,65 / 100,4 ★
+EMP-1336,Employee 336,Legal,June,86%,Reserved,Casual Leave,81 / 100,4 ★
+EMP-1337,Employee 337,Administration,August,71%,Reserved,Sick Leave,61 / 100,2 ★
+EMP-1338,Employee 338,Customer Support,May,81%,Reserved,Sick Leave,77 / 100,3 ★
+EMP-1339,Employee 339,Engineering,December,91%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1340,Employee 340,Customer Support,February,96%,In Stock,None,100 / 100,5 ★
+EMP-1341,Employee 341,Sales,May,98%,In Stock,None,91 / 100,5 ★
+EMP-1342,Employee 342,Procurement,January,97%,In Stock,None,97 / 100,5 ★
+EMP-1343,Employee 343,R&D,April,88%,Reserved,Sick Leave,82 / 100,4 ★
+EMP-1344,Employee 344,Marketing,December,85%,In Stock,None,78 / 100,5 ★
+EMP-1345,Employee 345,Operations,February,73%,Reserved,Special Leave,63 / 100,3 ★
+EMP-1346,Employee 346,HR,December,81%,In Stock,Casual Leave,70 / 100,3 ★
+EMP-1347,Employee 347,R&D,September,72%,On Leave,Sick Leave,76 / 100,4 ★
+EMP-1348,Employee 348,Marketing,July,92%,In Stock,Casual Leave,80 / 100,4 ★
+EMP-1349,Employee 349,Finance,February,84%,Reserved,None,71 / 100,5 ★
+EMP-1350,Employee 350,Legal,December,77%,Reserved,Vacation,73 / 100,2 ★
+EMP-1351,Employee 351,Finance,April,92%,Reserved,None,81 / 100,5 ★
+EMP-1352,Employee 352,Sales,October,98%,In Stock,None,96 / 100,5 ★
+EMP-1353,Employee 353,Legal,June,85%,Reserved,Casual Leave,75 / 100,3 ★
+EMP-1354,Employee 354,HR,September,82%,In Stock,Casual Leave,83 / 100,5 ★
+EMP-1355,Employee 355,Operations,June,79%,Reserved,Special Leave,71 / 100,3 ★
+EMP-1356,Employee 356,Customer Support,June,72%,Reserved,Vacation,70 / 100,4 ★
+EMP-1357,Employee 357,R&D,September,79%,On Leave,Sick Leave,76 / 100,2 ★
+EMP-1358,Employee 358,HR,February,84%,Reserved,Sick Leave,84 / 100,3 ★
+EMP-1359,Employee 359,Finance,January,84%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1360,Employee 360,R&D,December,86%,Reserved,Sick Leave,86 / 100,5 ★
+EMP-1361,Employee 361,Legal,April,70%,Reserved,Sick Leave,63 / 100,4 ★
+EMP-1362,Employee 362,Engineering,May,88%,Reserved,None,74 / 100,5 ★
+EMP-1363,Employee 363,IT,January,82%,In Stock,Sick Leave,87 / 100,4 ★
+EMP-1364,Employee 364,Marketing,February,90%,Reserved,Casual Leave,88 / 100,5 ★
+EMP-1365,Employee 365,Finance,February,84%,Reserved,Casual Leave,86 / 100,5 ★
+EMP-1366,Employee 366,HR,June,82%,In Stock,Sick Leave,80 / 100,4 ★
+EMP-1367,Employee 367,Legal,March,75%,Reserved,Sick Leave,74 / 100,2 ★
+EMP-1368,Employee 368,Finance,June,85%,In Stock,None,72 / 100,5 ★
+EMP-1369,Employee 369,Sales,August,70%,Reserved,Sick Leave,66 / 100,2 ★
+EMP-1370,Employee 370,Customer Support,November,98%,In Stock,None,92 / 100,5 ★
+EMP-1371,Employee 371,Engineering,November,96%,In Stock,None,97 / 100,5 ★
+EMP-1372,Employee 372,Engineering,January,86%,Reserved,None,79 / 100,4 ★
+EMP-1373,Employee 373,Engineering,February,87%,Reserved,Sick Leave,87 / 100,3 ★
+EMP-1374,Employee 374,Procurement,February,80%,Reserved,None,85 / 100,3 ★
+EMP-1375,Employee 375,Sales,December,77%,Reserved,Vacation,65 / 100,3 ★
+EMP-1376,Employee 376,Procurement,July,80%,In Stock,Sick Leave,87 / 100,3 ★
+EMP-1377,Employee 377,Legal,February,100%,In Stock,None,95 / 100,5 ★
+EMP-1378,Employee 378,HR,December,91%,Reserved,Casual Leave,94 / 100,5 ★
+EMP-1379,Employee 379,Marketing,November,83%,Reserved,Sick Leave,89 / 100,3 ★
+EMP-1380,Employee 380,HR,March,91%,In Stock,Casual Leave,84 / 100,5 ★
+EMP-1381,Employee 381,Finance,February,98%,In Stock,None,98 / 100,5 ★
+EMP-1382,Employee 382,Sales,March,84%,Reserved,Casual Leave,86 / 100,5 ★
+EMP-1383,Employee 383,Engineering,September,86%,In Stock,Sick Leave,76 / 100,4 ★
+EMP-1384,Employee 384,Sales,April,100%,In Stock,None,90 / 100,5 ★
+EMP-1385,Employee 385,Finance,October,79%,Reserved,Vacation,80 / 100,3 ★
+EMP-1386,Employee 386,Legal,June,83%,In Stock,Sick Leave,84 / 100,5 ★
+EMP-1387,Employee 387,Administration,April,97%,In Stock,None,98 / 100,5 ★
+EMP-1388,Employee 388,Operations,June,81%,Reserved,Casual Leave,84 / 100,3 ★
+EMP-1389,Employee 389,Customer Support,January,84%,Reserved,Sick Leave,90 / 100,3 ★
+EMP-1390,Employee 390,Procurement,January,99%,In Stock,None,92 / 100,5 ★
+EMP-1391,Employee 391,Engineering,June,98%,In Stock,None,93 / 100,5 ★
+EMP-1392,Employee 392,IT,November,72%,Reserved,Sick Leave,69 / 100,4 ★
+EMP-1393,Employee 393,Marketing,February,75%,On Leave,Vacation,67 / 100,2 ★
+EMP-1394,Employee 394,Engineering,December,90%,Reserved,Casual Leave,81 / 100,4 ★
+EMP-1395,Employee 395,Customer Support,May,81%,In Stock,Casual Leave,78 / 100,4 ★
+EMP-1396,Employee 396,Sales,February,86%,In Stock,Casual Leave,78 / 100,5 ★
+EMP-1397,Employee 397,Marketing,July,88%,Reserved,None,89 / 100,5 ★
+EMP-1398,Employee 398,Administration,May,86%,Reserved,None,89 / 100,4 ★
+EMP-1399,Employee 399,R&D,June,84%,Reserved,Casual Leave,76 / 100,4 ★
+EMP-1400,Employee 400,Finance,January,86%,In Stock,Sick Leave,76 / 100,4 ★
+EMP-1401,Employee 401,Legal,June,98%,In Stock,None,98 / 100,5 ★
+EMP-1402,Employee 402,Finance,February,81%,Reserved,Sick Leave,80 / 100,4 ★
+EMP-1403,Employee 403,Marketing,September,84%,In Stock,Casual Leave,88 / 100,3 ★
+EMP-1404,Employee 404,Legal,August,71%,Reserved,Vacation,80 / 100,3 ★
+EMP-1405,Employee 405,Operations,April,94%,Reserved,Casual Leave,82 / 100,5 ★
+EMP-1406,Employee 406,Marketing,March,92%,In Stock,Casual Leave,95 / 100,4 ★
+EMP-1407,Employee 407,HR,October,99%,In Stock,None,96 / 100,5 ★
+EMP-1408,Employee 408,Sales,April,76%,Reserved,Special Leave,78 / 100,3 ★
+EMP-1409,Employee 409,Finance,February,70%,On Leave,Special Leave,74 / 100,3 ★
+EMP-1410,Employee 410,Procurement,December,98%,In Stock,None,94 / 100,5 ★
+EMP-1411,Employee 411,Finance,October,84%,Reserved,None,79 / 100,4 ★
+EMP-1412,Employee 412,Procurement,May,76%,Reserved,Special Leave,68 / 100,4 ★
+EMP-1413,Employee 413,Marketing,May,72%,On Leave,Sick Leave,71 / 100,3 ★
+EMP-1414,Employee 414,Engineering,May,79%,On Leave,Special Leave,80 / 100,4 ★
+EMP-1415,Employee 415,Operations,July,82%,Reserved,None,82 / 100,5 ★
+EMP-1416,Employee 416,Marketing,July,73%,On Leave,Sick Leave,77 / 100,2 ★
+EMP-1417,Employee 417,IT,July,88%,Reserved,None,83 / 100,3 ★
+EMP-1418,Employee 418,Administration,July,97%,In Stock,None,94 / 100,5 ★
+EMP-1419,Employee 419,Administration,October,89%,Reserved,Casual Leave,89 / 100,5 ★
+EMP-1420,Employee 420,R&D,June,92%,In Stock,Casual Leave,95 / 100,5 ★
+EMP-1421,Employee 421,Marketing,February,94%,Reserved,None,85 / 100,4 ★
+EMP-1422,Employee 422,Procurement,April,92%,Reserved,None,92 / 100,4 ★
+EMP-1423,Employee 423,Marketing,December,89%,Reserved,Sick Leave,85 / 100,3 ★
+EMP-1424,Employee 424,Engineering,January,83%,In Stock,Casual Leave,85 / 100,4 ★
+EMP-1425,Employee 425,HR,May,86%,In Stock,Sick Leave,70 / 100,5 ★
+EMP-1426,Employee 426,Sales,November,96%,In Stock,None,93 / 100,5 ★
+EMP-1427,Employee 427,Finance,November,88%,In Stock,Casual Leave,78 / 100,4 ★
+EMP-1428,Employee 428,Finance,February,80%,Reserved,Sick Leave,86 / 100,3 ★
+EMP-1429,Employee 429,Customer Support,April,90%,Reserved,Casual Leave,87 / 100,4 ★
+EMP-1430,Employee 430,Marketing,May,73%,Reserved,Sick Leave,80 / 100,4 ★
+EMP-1431,Employee 431,IT,December,72%,Reserved,Special Leave,72 / 100,4 ★
+EMP-1432,Employee 432,Procurement,February,89%,In Stock,Casual Leave,82 / 100,5 ★
+EMP-1433,Employee 433,Sales,April,98%,In Stock,None,99 / 100,5 ★
+EMP-1434,Employee 434,Administration,June,89%,In Stock,None,81 / 100,5 ★
+EMP-1435,Employee 435,Operations,April,89%,In Stock,None,70 / 100,5 ★
+EMP-1436,Employee 436,Marketing,May,98%,In Stock,None,96 / 100,5 ★
+EMP-1437,Employee 437,Engineering,March,71%,On Leave,Special Leave,75 / 100,4 ★
+EMP-1438,Employee 438,Sales,January,99%,In Stock,None,98 / 100,5 ★
+EMP-1439,Employee 439,Sales,November,80%,In Stock,None,73 / 100,5 ★
+EMP-1440,Employee 440,Sales,June,97%,In Stock,None,94 / 100,5 ★
+EMP-1441,Employee 441,IT,May,88%,Reserved,Casual Leave,78 / 100,3 ★
+EMP-1442,Employee 442,Finance,April,97%,In Stock,None,95 / 100,5 ★
+EMP-1443,Employee 443,Administration,April,94%,In Stock,Casual Leave,95 / 100,4 ★
+EMP-1444,Employee 444,Engineering,October,96%,In Stock,None,97 / 100,5 ★
+EMP-1445,Employee 445,Engineering,April,73%,Reserved,Sick Leave,76 / 100,3 ★
+EMP-1446,Employee 446,Finance,June,90%,Reserved,Casual Leave,92 / 100,5 ★
+EMP-1447,Employee 447,R&D,November,76%,Reserved,Special Leave,74 / 100,3 ★
+EMP-1448,Employee 448,Customer Support,December,100%,In Stock,None,95 / 100,5 ★
+EMP-1449,Employee 449,Legal,August,75%,Reserved,Sick Leave,64 / 100,2 ★
+EMP-1450,Employee 450,Administration,January,82%,Reserved,Casual Leave,70 / 100,4 ★
+EMP-1451,Employee 451,HR,June,82%,Reserved,Sick Leave,87 / 100,5 ★
+EMP-1452,Employee 452,Sales,October,96%,In Stock,None,90 / 100,5 ★
+EMP-1453,Employee 453,IT,August,78%,Reserved,Sick Leave,75 / 100,3 ★
+EMP-1454,Employee 454,Customer Support,October,80%,Reserved,None,82 / 100,5 ★
+EMP-1455,Employee 455,IT,August,97%,In Stock,None,100 / 100,5 ★
+EMP-1456,Employee 456,Engineering,September,100%,In Stock,None,99 / 100,5 ★
+EMP-1457,Employee 457,R&D,May,80%,Reserved,Sick Leave,89 / 100,4 ★
+EMP-1458,Employee 458,HR,August,75%,On Leave,Sick Leave,64 / 100,3 ★
+EMP-1459,Employee 459,Operations,January,95%,In Stock,Casual Leave,82 / 100,5 ★
+EMP-1460,Employee 460,R&D,October,73%,On Leave,Special Leave,70 / 100,3 ★
+EMP-1461,Employee 461,R&D,January,86%,Reserved,None,90 / 100,5 ★
+EMP-1462,Employee 462,Operations,April,85%,In Stock,Sick Leave,70 / 100,3 ★
+EMP-1463,Employee 463,Marketing,June,81%,In Stock,Sick Leave,79 / 100,4 ★
+EMP-1464,Employee 464,IT,August,87%,In Stock,Sick Leave,79 / 100,5 ★
+EMP-1465,Employee 465,Finance,March,76%,On Leave,Vacation,69 / 100,2 ★
+EMP-1466,Employee 466,IT,July,91%,In Stock,Casual Leave,81 / 100,5 ★
+EMP-1467,Employee 467,Finance,December,82%,Reserved,Sick Leave,73 / 100,4 ★
+EMP-1468,Employee 468,Legal,June,82%,In Stock,Casual Leave,75 / 100,5 ★
+EMP-1469,Employee 469,HR,October,97%,In Stock,None,100 / 100,5 ★
+EMP-1470,Employee 470,Administration,April,92%,Reserved,None,88 / 100,4 ★
+EMP-1471,Employee 471,Sales,November,97%,In Stock,None,93 / 100,5 ★
+EMP-1472,Employee 472,R&D,March,84%,In Stock,None,83 / 100,3 ★
+EMP-1473,Employee 473,HR,April,76%,Reserved,Sick Leave,66 / 100,2 ★
+EMP-1474,Employee 474,Finance,November,93%,Reserved,None,93 / 100,5 ★
+EMP-1475,Employee 475,R&D,July,90%,In Stock,Casual Leave,81 / 100,4 ★
+EMP-1476,Employee 476,Finance,August,72%,Reserved,Sick Leave,76 / 100,2 ★
+EMP-1477,Employee 477,Legal,September,87%,Reserved,Sick Leave,89 / 100,3 ★
+EMP-1478,Employee 478,Operations,June,75%,Reserved,Sick Leave,75 / 100,2 ★
+EMP-1479,Employee 479,Sales,August,85%,Reserved,Sick Leave,87 / 100,3 ★
+EMP-1480,Employee 480,R&D,September,97%,In Stock,None,91 / 100,5 ★
+EMP-1481,Employee 481,Administration,February,79%,Reserved,Special Leave,65 / 100,3 ★
+EMP-1482,Employee 482,Sales,March,88%,Reserved,None,70 / 100,3 ★
+EMP-1483,Employee 483,R&D,September,100%,In Stock,None,100 / 100,5 ★
+EMP-1484,Employee 484,R&D,February,100%,In Stock,None,100 / 100,5 ★
+EMP-1485,Employee 485,Finance,August,98%,In Stock,None,94 / 100,5 ★
+EMP-1486,Employee 486,Legal,March,80%,Reserved,Casual Leave,71 / 100,4 ★
+EMP-1487,Employee 487,Marketing,July,82%,In Stock,Sick Leave,90 / 100,3 ★
+EMP-1488,Employee 488,Operations,March,91%,Reserved,None,87 / 100,4 ★
+EMP-1489,Employee 489,Customer Support,October,87%,Reserved,None,88 / 100,3 ★
+EMP-1490,Employee 490,Customer Support,November,71%,Reserved,Special Leave,77 / 100,3 ★
+EMP-1491,Employee 491,Marketing,February,77%,On Leave,Vacation,72 / 100,2 ★
+EMP-1492,Employee 492,Sales,June,98%,In Stock,None,98 / 100,5 ★
+EMP-1493,Employee 493,IT,February,92%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1494,Employee 494,Customer Support,October,82%,Reserved,None,80 / 100,3 ★
+EMP-1495,Employee 495,Finance,December,93%,Reserved,Casual Leave,84 / 100,4 ★
+EMP-1496,Employee 496,Procurement,June,97%,In Stock,None,100 / 100,5 ★
+EMP-1497,Employee 497,Finance,July,74%,Reserved,Special Leave,74 / 100,3 ★
+EMP-1498,Employee 498,Customer Support,October,78%,On Leave,Special Leave,63 / 100,3 ★
+EMP-1499,Employee 499,HR,August,97%,In Stock,None,96 / 100,5 ★
+EMP-1500,Employee 500,IT,February,74%,On Leave,Sick Leave,66 / 100,2 ★
+EMP-1501,Employee 501,HR,March,93%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1502,Employee 502,Operations,December,95%,In Stock,None,80 / 100,5 ★
+EMP-1503,Employee 503,Operations,December,81%,In Stock,Sick Leave,90 / 100,3 ★
+EMP-1504,Employee 504,Finance,November,96%,In Stock,None,91 / 100,5 ★
+EMP-1505,Employee 505,Finance,September,92%,Reserved,Casual Leave,86 / 100,5 ★
+EMP-1506,Employee 506,Procurement,October,94%,Reserved,None,84 / 100,4 ★
+EMP-1507,Employee 507,Operations,November,79%,On Leave,Sick Leave,68 / 100,4 ★
+EMP-1508,Employee 508,Operations,December,86%,Reserved,Sick Leave,70 / 100,4 ★
+EMP-1509,Employee 509,Finance,February,76%,Reserved,Sick Leave,63 / 100,2 ★
+EMP-1510,Employee 510,Marketing,September,73%,On Leave,Special Leave,72 / 100,2 ★
+EMP-1511,Employee 511,Marketing,December,95%,In Stock,None,92 / 100,4 ★
+EMP-1512,Employee 512,Marketing,December,98%,In Stock,None,96 / 100,5 ★
+EMP-1513,Employee 513,IT,November,95%,In Stock,Casual Leave,95 / 100,5 ★
+EMP-1514,Employee 514,HR,November,83%,In Stock,Sick Leave,76 / 100,3 ★
+EMP-1515,Employee 515,Sales,November,99%,In Stock,None,95 / 100,5 ★
+EMP-1516,Employee 516,Sales,August,99%,In Stock,None,99 / 100,5 ★
+EMP-1517,Employee 517,R&D,March,90%,Reserved,None,87 / 100,4 ★
+EMP-1518,Employee 518,Customer Support,May,78%,Reserved,Special Leave,75 / 100,4 ★
+EMP-1519,Employee 519,Procurement,May,79%,Reserved,Vacation,62 / 100,3 ★
+EMP-1520,Employee 520,Engineering,November,83%,Reserved,None,74 / 100,3 ★
+EMP-1521,Employee 521,Sales,January,82%,Reserved,Casual Leave,89 / 100,5 ★
+EMP-1522,Employee 522,Finance,September,73%,On Leave,Sick Leave,65 / 100,2 ★
+EMP-1523,Employee 523,Administration,January,85%,In Stock,None,87 / 100,5 ★
+EMP-1524,Employee 524,Finance,November,96%,In Stock,None,96 / 100,5 ★
+EMP-1525,Employee 525,Customer Support,May,71%,Reserved,Sick Leave,63 / 100,2 ★
+EMP-1526,Employee 526,Procurement,July,80%,In Stock,Casual Leave,73 / 100,4 ★
+EMP-1527,Employee 527,IT,June,91%,In Stock,None,91 / 100,4 ★
+EMP-1528,Employee 528,Engineering,July,82%,Reserved,Sick Leave,85 / 100,3 ★
+EMP-1529,Employee 529,Finance,October,82%,In Stock,Sick Leave,82 / 100,4 ★
+EMP-1530,Employee 530,Operations,July,77%,On Leave,Vacation,80 / 100,3 ★
+EMP-1531,Employee 531,Marketing,February,80%,In Stock,None,86 / 100,5 ★
+EMP-1532,Employee 532,Customer Support,October,82%,Reserved,Casual Leave,85 / 100,4 ★
+EMP-1533,Employee 533,Operations,December,99%,In Stock,None,100 / 100,5 ★
+EMP-1534,Employee 534,IT,April,71%,On Leave,Sick Leave,61 / 100,3 ★
+EMP-1535,Employee 535,Marketing,September,86%,Reserved,None,84 / 100,4 ★
+EMP-1536,Employee 536,HR,August,78%,On Leave,Special Leave,67 / 100,2 ★
+EMP-1537,Employee 537,Finance,November,87%,Reserved,Sick Leave,82 / 100,3 ★
+EMP-1538,Employee 538,Marketing,April,88%,In Stock,Casual Leave,88 / 100,5 ★
+EMP-1539,Employee 539,Procurement,February,87%,In Stock,Sick Leave,78 / 100,4 ★
+EMP-1540,Employee 540,Customer Support,November,75%,On Leave,Sick Leave,78 / 100,4 ★
+EMP-1541,Employee 541,Marketing,December,70%,Reserved,Sick Leave,73 / 100,2 ★
+EMP-1542,Employee 542,Administration,December,94%,Reserved,None,83 / 100,4 ★
+EMP-1543,Employee 543,R&D,August,96%,In Stock,None,92 / 100,5 ★
+EMP-1544,Employee 544,HR,March,100%,In Stock,None,100 / 100,5 ★
+EMP-1545,Employee 545,Sales,July,97%,In Stock,None,99 / 100,5 ★
+EMP-1546,Employee 546,IT,December,94%,Reserved,Casual Leave,89 / 100,5 ★
+EMP-1547,Employee 547,Finance,October,83%,Reserved,Casual Leave,82 / 100,4 ★
+EMP-1548,Employee 548,Engineering,December,85%,In Stock,Casual Leave,75 / 100,4 ★
+EMP-1549,Employee 549,IT,July,95%,In Stock,Casual Leave,83 / 100,5 ★
+EMP-1550,Employee 550,Engineering,February,87%,Reserved,Casual Leave,75 / 100,5 ★
+EMP-1551,Employee 551,Administration,May,80%,In Stock,Casual Leave,78 / 100,4 ★
+EMP-1552,Employee 552,Procurement,August,72%,On Leave,Sick Leave,66 / 100,2 ★
+EMP-1553,Employee 553,Sales,April,75%,Reserved,Special Leave,63 / 100,2 ★
+EMP-1554,Employee 554,Engineering,June,70%,Reserved,Special Leave,61 / 100,4 ★
+EMP-1555,Employee 555,IT,August,82%,In Stock,None,76 / 100,5 ★
+EMP-1556,Employee 556,Marketing,July,95%,Reserved,Casual Leave,92 / 100,5 ★
+EMP-1557,Employee 557,Marketing,July,92%,In Stock,None,94 / 100,4 ★
+EMP-1558,Employee 558,Marketing,April,78%,On Leave,Sick Leave,65 / 100,3 ★
+EMP-1559,Employee 559,Administration,September,90%,Reserved,Casual Leave,84 / 100,4 ★
+EMP-1560,Employee 560,Operations,February,82%,Reserved,Sick Leave,76 / 100,3 ★
+EMP-1561,Employee 561,Legal,July,96%,In Stock,None,99 / 100,5 ★
+EMP-1562,Employee 562,Sales,October,86%,In Stock,Casual Leave,84 / 100,3 ★
+EMP-1563,Employee 563,Operations,February,99%,In Stock,None,99 / 100,5 ★
+EMP-1564,Employee 564,Procurement,March,88%,In Stock,None,83 / 100,3 ★
+EMP-1565,Employee 565,HR,April,99%,In Stock,None,95 / 100,5 ★
+EMP-1566,Employee 566,Operations,March,71%,Reserved,Sick Leave,61 / 100,2 ★
+EMP-1567,Employee 567,IT,February,93%,Reserved,Casual Leave,92 / 100,4 ★
+EMP-1568,Employee 568,Sales,February,77%,Reserved,Special Leave,71 / 100,3 ★
+EMP-1569,Employee 569,Engineering,October,89%,Reserved,None,85 / 100,5 ★
+EMP-1570,Employee 570,Engineering,December,81%,In Stock,Casual Leave,83 / 100,4 ★
+EMP-1571,Employee 571,Engineering,August,80%,Reserved,None,81 / 100,5 ★
+EMP-1572,Employee 572,HR,December,70%,Reserved,Special Leave,72 / 100,3 ★
+EMP-1573,Employee 573,R&D,August,81%,In Stock,Sick Leave,71 / 100,3 ★
+EMP-1574,Employee 574,Operations,May,78%,Reserved,Special Leave,65 / 100,4 ★
+EMP-1575,Employee 575,Procurement,December,85%,In Stock,None,81 / 100,4 ★
+EMP-1576,Employee 576,Administration,December,91%,In Stock,None,85 / 100,4 ★
+EMP-1577,Employee 577,Administration,May,88%,Reserved,Casual Leave,84 / 100,4 ★
+EMP-1578,Employee 578,Engineering,December,97%,In Stock,None,97 / 100,5 ★
+EMP-1579,Employee 579,Legal,May,71%,On Leave,Special Leave,62 / 100,3 ★
+EMP-1580,Employee 580,Operations,November,98%,In Stock,None,96 / 100,5 ★
+EMP-1581,Employee 581,Legal,August,91%,In Stock,None,86 / 100,5 ★
+EMP-1582,Employee 582,Administration,July,88%,In Stock,Sick Leave,79 / 100,5 ★
+EMP-1583,Employee 583,Customer Support,May,100%,In Stock,None,92 / 100,5 ★
+EMP-1584,Employee 584,Operations,April,83%,Reserved,Casual Leave,78 / 100,5 ★
+EMP-1585,Employee 585,Engineering,January,85%,In Stock,Sick Leave,88 / 100,5 ★
+EMP-1586,Employee 586,HR,October,72%,Reserved,Sick Leave,70 / 100,3 ★
+EMP-1587,Employee 587,Administration,December,92%,Reserved,None,88 / 100,4 ★
+EMP-1588,Employee 588,Legal,August,98%,In Stock,None,92 / 100,5 ★
+EMP-1589,Employee 589,Procurement,April,84%,Reserved,Sick Leave,72 / 100,3 ★
+EMP-1590,Employee 590,Administration,June,83%,Reserved,Casual Leave,70 / 100,5 ★
+EMP-1591,Employee 591,Operations,August,89%,Reserved,Casual Leave,90 / 100,3 ★
+EMP-1592,Employee 592,Customer Support,January,86%,In Stock,None,88 / 100,4 ★
+EMP-1593,Employee 593,Legal,December,95%,In Stock,None,93 / 100,5 ★
+EMP-1594,Employee 594,Finance,August,94%,In Stock,Casual Leave,82 / 100,4 ★
+EMP-1595,Employee 595,Procurement,March,93%,In Stock,Casual Leave,89 / 100,5 ★
+EMP-1596,Employee 596,Operations,February,75%,On Leave,Vacation,61 / 100,2 ★
+EMP-1597,Employee 597,Engineering,October,82%,In Stock,Casual Leave,78 / 100,4 ★
+EMP-1598,Employee 598,Legal,October,90%,Reserved,None,83 / 100,5 ★
+EMP-1599,Employee 599,Legal,November,71%,Reserved,Sick Leave,78 / 100,3 ★
+EMP-1600,Employee 600,Administration,February,99%,In Stock,None,93 / 100,5 ★
+EMP-1601,Employee 601,Sales,March,95%,In Stock,None,81 / 100,4 ★
+EMP-1602,Employee 602,Legal,August,97%,In Stock,None,90 / 100,5 ★
+EMP-1603,Employee 603,Engineering,June,87%,In Stock,Sick Leave,72 / 100,4 ★
+EMP-1604,Employee 604,HR,February,96%,In Stock,None,91 / 100,5 ★
+EMP-1605,Employee 605,HR,April,97%,In Stock,None,94 / 100,5 ★
+EMP-1606,Employee 606,Marketing,October,78%,Reserved,Vacation,63 / 100,3 ★
+EMP-1607,Employee 607,Administration,August,82%,In Stock,Casual Leave,73 / 100,3 ★
+EMP-1608,Employee 608,HR,August,85%,In Stock,Sick Leave,79 / 100,4 ★
+EMP-1609,Employee 609,Operations,November,91%,Reserved,Casual Leave,81 / 100,4 ★
+EMP-1610,Employee 610,Legal,February,76%,On Leave,Special Leave,60 / 100,2 ★
+EMP-1611,Employee 611,Procurement,December,98%,In Stock,None,91 / 100,5 ★
+EMP-1612,Employee 612,Procurement,November,93%,Reserved,Casual Leave,90 / 100,4 ★
+EMP-1613,Employee 613,Sales,May,92%,In Stock,Casual Leave,82 / 100,4 ★
+EMP-1614,Employee 614,Customer Support,June,94%,Reserved,Casual Leave,82 / 100,5 ★
+EMP-1615,Employee 615,IT,April,92%,Reserved,Casual Leave,92 / 100,5 ★
+EMP-1616,Employee 616,R&D,February,95%,Reserved,None,94 / 100,4 ★
+EMP-1617,Employee 617,Finance,December,72%,Reserved,Special Leave,76 / 100,4 ★
+EMP-1618,Employee 618,Legal,April,91%,Reserved,Casual Leave,85 / 100,4 ★
+EMP-1619,Employee 619,Customer Support,May,87%,Reserved,Sick Leave,83 / 100,5 ★
+EMP-1620,Employee 620,Customer Support,June,95%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1621,Employee 621,Legal,May,77%,Reserved,Vacation,67 / 100,3 ★
+EMP-1622,Employee 622,Customer Support,January,91%,Reserved,Casual Leave,95 / 100,5 ★
+EMP-1623,Employee 623,R&D,May,92%,Reserved,Casual Leave,85 / 100,4 ★
+EMP-1624,Employee 624,Administration,May,74%,Reserved,Vacation,64 / 100,3 ★
+EMP-1625,Employee 625,HR,February,100%,In Stock,None,91 / 100,5 ★
+EMP-1626,Employee 626,Marketing,October,70%,Reserved,Special Leave,66 / 100,4 ★
+EMP-1627,Employee 627,Administration,June,82%,In Stock,None,77 / 100,5 ★
+EMP-1628,Employee 628,Marketing,April,74%,On Leave,Special Leave,60 / 100,4 ★
+EMP-1629,Employee 629,Operations,May,70%,On Leave,Sick Leave,77 / 100,3 ★
+EMP-1630,Employee 630,Administration,September,97%,In Stock,None,94 / 100,5 ★
+EMP-1631,Employee 631,R&D,July,80%,Reserved,Casual Leave,85 / 100,3 ★
+EMP-1632,Employee 632,HR,August,85%,In Stock,Casual Leave,80 / 100,4 ★
+EMP-1633,Employee 633,Customer Support,January,92%,Reserved,None,81 / 100,5 ★
+EMP-1634,Employee 634,Finance,January,88%,Reserved,None,84 / 100,3 ★
+EMP-1635,Employee 635,Procurement,August,95%,In Stock,None,82 / 100,4 ★
+EMP-1636,Employee 636,HR,April,72%,On Leave,Vacation,74 / 100,4 ★
+EMP-1637,Employee 637,Marketing,June,78%,Reserved,Special Leave,69 / 100,3 ★
+EMP-1638,Employee 638,Procurement,August,84%,Reserved,Sick Leave,71 / 100,4 ★
+EMP-1639,Employee 639,Sales,November,93%,Reserved,Casual Leave,86 / 100,4 ★
+EMP-1640,Employee 640,Operations,February,89%,In Stock,Casual Leave,74 / 100,3 ★
+EMP-1641,Employee 641,R&D,December,80%,In Stock,Sick Leave,77 / 100,4 ★
+EMP-1642,Employee 642,IT,July,100%,In Stock,None,96 / 100,5 ★
+EMP-1643,Employee 643,Administration,November,92%,Reserved,Casual Leave,87 / 100,4 ★
+EMP-1644,Employee 644,Sales,June,91%,Reserved,Casual Leave,90 / 100,4 ★
+EMP-1645,Employee 645,Finance,March,76%,Reserved,Special Leave,74 / 100,2 ★
+EMP-1646,Employee 646,Administration,July,96%,In Stock,None,98 / 100,5 ★
+EMP-1647,Employee 647,Operations,July,73%,On Leave,Sick Leave,79 / 100,3 ★
+EMP-1648,Employee 648,Sales,September,86%,Reserved,Sick Leave,74 / 100,5 ★
+EMP-1649,Employee 649,Marketing,August,78%,Reserved,Sick Leave,62 / 100,4 ★
+EMP-1650,Employee 650,Marketing,February,71%,Reserved,Sick Leave,73 / 100,3 ★
+EMP-1651,Employee 651,Customer Support,May,99%,In Stock,None,92 / 100,5 ★
+EMP-1652,Employee 652,Administration,April,73%,On Leave,Sick Leave,73 / 100,3 ★
+EMP-1653,Employee 653,Procurement,July,70%,Reserved,Sick Leave,77 / 100,3 ★
+EMP-1654,Employee 654,HR,February,82%,In Stock,Sick Leave,72 / 100,3 ★
+EMP-1655,Employee 655,Customer Support,August,79%,On Leave,Sick Leave,78 / 100,4 ★
+EMP-1656,Employee 656,Administration,September,99%,In Stock,None,97 / 100,5 ★
+EMP-1657,Employee 657,Marketing,March,95%,In Stock,Casual Leave,92 / 100,4 ★
+EMP-1658,Employee 658,Finance,December,85%,Reserved,Sick Leave,71 / 100,3 ★
+EMP-1659,Employee 659,Operations,November,92%,Reserved,Casual Leave,82 / 100,5 ★
+EMP-1660,Employee 660,R&D,July,84%,In Stock,None,83 / 100,5 ★
+EMP-1661,Employee 661,Engineering,December,73%,On Leave,Special Leave,65 / 100,4 ★
+EMP-1662,Employee 662,R&D,December,78%,On Leave,Sick Leave,66 / 100,2 ★
+EMP-1663,Employee 663,Administration,March,76%,Reserved,Vacation,61 / 100,2 ★
+EMP-1664,Employee 664,Finance,June,99%,In Stock,None,92 / 100,5 ★
+EMP-1665,Employee 665,Engineering,January,100%,In Stock,None,94 / 100,5 ★
+EMP-1666,Employee 666,R&D,February,79%,On Leave,Sick Leave,78 / 100,4 ★
+EMP-1667,Employee 667,Procurement,March,96%,In Stock,None,100 / 100,5 ★
+EMP-1668,Employee 668,Engineering,January,76%,Reserved,Vacation,76 / 100,2 ★
+EMP-1669,Employee 669,Operations,May,96%,In Stock,None,96 / 100,5 ★
+EMP-1670,Employee 670,R&D,June,94%,In Stock,None,86 / 100,4 ★
+EMP-1671,Employee 671,Procurement,March,80%,Reserved,None,87 / 100,5 ★
+EMP-1672,Employee 672,Finance,February,86%,In Stock,Sick Leave,75 / 100,5 ★
+EMP-1673,Employee 673,R&D,May,75%,On Leave,Vacation,61 / 100,3 ★
+EMP-1674,Employee 674,Customer Support,April,95%,Reserved,None,81 / 100,5 ★
+EMP-1675,Employee 675,Finance,October,77%,Reserved,Sick Leave,70 / 100,3 ★
+EMP-1676,Employee 676,Operations,June,99%,In Stock,None,90 / 100,5 ★
+EMP-1677,Employee 677,R&D,April,71%,On Leave,Special Leave,80 / 100,4 ★
+EMP-1678,Employee 678,Sales,March,76%,Reserved,Special Leave,66 / 100,4 ★
+EMP-1679,Employee 679,Sales,October,86%,Reserved,Casual Leave,82 / 100,5 ★
+EMP-1680,Employee 680,Finance,December,99%,In Stock,None,99 / 100,5 ★
+EMP-1681,Employee 681,Customer Support,May,70%,Reserved,Sick Leave,77 / 100,4 ★
+EMP-1682,Employee 682,HR,November,81%,In Stock,Casual Leave,82 / 100,4 ★
+EMP-1683,Employee 683,Engineering,August,82%,Reserved,Casual Leave,87 / 100,3 ★
+EMP-1684,Employee 684,Procurement,October,85%,In Stock,None,72 / 100,5 ★
+EMP-1685,Employee 685,Procurement,October,84%,In Stock,None,75 / 100,4 ★
+EMP-1686,Employee 686,Legal,July,96%,In Stock,None,93 / 100,5 ★
+EMP-1687,Employee 687,Legal,October,80%,Reserved,None,80 / 100,3 ★
+EMP-1688,Employee 688,Marketing,July,76%,On Leave,Vacation,64 / 100,4 ★
+EMP-1689,Employee 689,IT,November,79%,Reserved,Vacation,69 / 100,2 ★
+EMP-1690,Employee 690,Finance,January,81%,In Stock,Casual Leave,90 / 100,5 ★
+EMP-1691,Employee 691,Sales,October,99%,In Stock,None,94 / 100,5 ★
+EMP-1692,Employee 692,Operations,February,94%,In Stock,Casual Leave,82 / 100,5 ★
+EMP-1693,Employee 693,Procurement,May,84%,Reserved,Casual Leave,87 / 100,5 ★
+EMP-1694,Employee 694,Customer Support,April,85%,Reserved,None,90 / 100,5 ★
+EMP-1695,Employee 695,Finance,August,72%,Reserved,Vacation,73 / 100,4 ★
+EMP-1696,Employee 696,Sales,April,84%,In Stock,None,86 / 100,5 ★
+EMP-1697,Employee 697,Engineering,June,83%,In Stock,None,72 / 100,4 ★
+EMP-1698,Employee 698,R&D,May,98%,In Stock,None,96 / 100,5 ★
+EMP-1699,Employee 699,Operations,November,93%,Reserved,None,91 / 100,4 ★
+EMP-1700,Employee 700,Operations,June,94%,Reserved,Casual Leave,92 / 100,5 ★
+EMP-1701,Employee 701,Customer Support,November,93%,Reserved,Casual Leave,81 / 100,5 ★
+EMP-1702,Employee 702,R&D,February,77%,On Leave,Vacation,68 / 100,2 ★
+EMP-1703,Employee 703,IT,May,79%,Reserved,Special Leave,71 / 100,3 ★
+EMP-1704,Employee 704,IT,February,72%,Reserved,Vacation,69 / 100,4 ★
+EMP-1705,Employee 705,Finance,April,91%,Reserved,Casual Leave,91 / 100,5 ★
+EMP-1706,Employee 706,Customer Support,June,95%,In Stock,Casual Leave,93 / 100,5 ★
+EMP-1707,Employee 707,HR,May,89%,Reserved,None,71 / 100,5 ★
+EMP-1708,Employee 708,Sales,December,81%,Reserved,Sick Leave,72 / 100,3 ★
+EMP-1709,Employee 709,R&D,May,72%,On Leave,Sick Leave,73 / 100,2 ★
+EMP-1710,Employee 710,Marketing,July,84%,Reserved,Sick Leave,84 / 100,4 ★
+EMP-1711,Employee 711,Procurement,December,99%,In Stock,None,97 / 100,5 ★
+EMP-1712,Employee 712,Finance,February,93%,Reserved,Casual Leave,84 / 100,5 ★
+EMP-1713,Employee 713,IT,April,99%,In Stock,None,93 / 100,5 ★
+EMP-1714,Employee 714,Marketing,March,90%,In Stock,Casual Leave,82 / 100,5 ★
+EMP-1715,Employee 715,Operations,July,90%,Reserved,Casual Leave,92 / 100,5 ★
+EMP-1716,Employee 716,Legal,July,87%,Reserved,Casual Leave,84 / 100,4 ★
+EMP-1717,Employee 717,Finance,December,75%,Reserved,Special Leave,60 / 100,2 ★
+EMP-1718,Employee 718,Administration,November,83%,Reserved,None,88 / 100,5 ★
+EMP-1719,Employee 719,Legal,June,87%,Reserved,None,79 / 100,5 ★
+EMP-1720,Employee 720,Sales,May,94%,In Stock,None,85 / 100,5 ★
+EMP-1721,Employee 721,Procurement,August,85%,In Stock,Sick Leave,84 / 100,3 ★
+EMP-1722,Employee 722,Operations,December,97%,In Stock,None,99 / 100,5 ★
+EMP-1723,Employee 723,Administration,November,77%,Reserved,Vacation,69 / 100,3 ★
+EMP-1724,Employee 724,Marketing,October,82%,Reserved,Sick Leave,89 / 100,5 ★
+EMP-1725,Employee 725,Sales,September,100%,In Stock,None,97 / 100,5 ★
+EMP-1726,Employee 726,Finance,November,72%,On Leave,Special Leave,74 / 100,3 ★
+EMP-1727,Employee 727,Finance,August,90%,In Stock,Casual Leave,91 / 100,5 ★
+EMP-1728,Employee 728,Procurement,February,90%,Reserved,None,88 / 100,4 ★
+EMP-1729,Employee 729,Procurement,April,75%,On Leave,Sick Leave,68 / 100,2 ★
+EMP-1730,Employee 730,Administration,October,85%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1731,Employee 731,Legal,July,99%,In Stock,None,95 / 100,5 ★
+EMP-1732,Employee 732,HR,January,81%,In Stock,None,86 / 100,5 ★
+EMP-1733,Employee 733,Finance,February,70%,Reserved,Vacation,66 / 100,3 ★
+EMP-1734,Employee 734,Marketing,February,95%,In Stock,None,86 / 100,4 ★
+EMP-1735,Employee 735,Finance,June,77%,On Leave,Vacation,62 / 100,4 ★
+EMP-1736,Employee 736,Finance,May,76%,Reserved,Special Leave,67 / 100,3 ★
+EMP-1737,Employee 737,Procurement,October,74%,On Leave,Vacation,79 / 100,4 ★
+EMP-1738,Employee 738,Engineering,May,99%,In Stock,None,99 / 100,5 ★
+EMP-1739,Employee 739,Sales,April,75%,Reserved,Special Leave,78 / 100,4 ★
+EMP-1740,Employee 740,Operations,February,77%,Reserved,Sick Leave,69 / 100,4 ★
+EMP-1741,Employee 741,Legal,December,89%,Reserved,None,86 / 100,3 ★
+EMP-1742,Employee 742,Operations,September,85%,In Stock,None,78 / 100,4 ★
+EMP-1743,Employee 743,Engineering,January,80%,Reserved,None,75 / 100,5 ★
+EMP-1744,Employee 744,Procurement,July,75%,On Leave,Vacation,65 / 100,3 ★
+EMP-1745,Employee 745,Customer Support,June,92%,In Stock,Casual Leave,90 / 100,4 ★
+EMP-1746,Employee 746,Marketing,May,84%,In Stock,Sick Leave,80 / 100,4 ★
+EMP-1747,Employee 747,Procurement,January,97%,In Stock,None,96 / 100,5 ★
+EMP-1748,Employee 748,Engineering,June,71%,On Leave,Special Leave,76 / 100,3 ★
+EMP-1749,Employee 749,HR,September,87%,In Stock,None,73 / 100,3 ★
+EMP-1750,Employee 750,Marketing,June,98%,In Stock,None,92 / 100,5 ★
+EMP-1751,Employee 751,Marketing,October,84%,In Stock,Casual Leave,72 / 100,3 ★
+EMP-1752,Employee 752,Finance,February,73%,Reserved,Special Leave,76 / 100,3 ★
+EMP-1753,Employee 753,Marketing,April,99%,In Stock,None,91 / 100,5 ★
+EMP-1754,Employee 754,Administration,July,91%,Reserved,Casual Leave,84 / 100,4 ★
+EMP-1755,Employee 755,Engineering,January,79%,Reserved,Vacation,68 / 100,3 ★
+EMP-1756,Employee 756,Engineering,July,85%,In Stock,Casual Leave,82 / 100,3 ★
+EMP-1757,Employee 757,Finance,June,88%,In Stock,None,89 / 100,5 ★
+EMP-1758,Employee 758,IT,May,88%,Reserved,Sick Leave,89 / 100,4 ★
+EMP-1759,Employee 759,HR,May,70%,Reserved,Vacation,78 / 100,3 ★
+EMP-1760,Employee 760,Procurement,November,82%,In Stock,None,80 / 100,4 ★
+EMP-1761,Employee 761,Legal,December,76%,Reserved,Special Leave,62 / 100,3 ★
+EMP-1762,Employee 762,Procurement,March,81%,Reserved,None,76 / 100,3 ★
+EMP-1763,Employee 763,Administration,December,90%,In Stock,None,88 / 100,4 ★
+EMP-1764,Employee 764,Procurement,July,78%,On Leave,Sick Leave,69 / 100,4 ★
+EMP-1765,Employee 765,Finance,May,94%,Reserved,None,83 / 100,4 ★
+EMP-1766,Employee 766,Legal,May,99%,In Stock,None,96 / 100,5 ★
+EMP-1767,Employee 767,Marketing,December,77%,On Leave,Sick Leave,70 / 100,4 ★
+EMP-1768,Employee 768,Marketing,April,81%,Reserved,Sick Leave,77 / 100,4 ★
+EMP-1769,Employee 769,Customer Support,June,100%,In Stock,None,100 / 100,5 ★
+EMP-1770,Employee 770,Sales,March,94%,In Stock,None,85 / 100,4 ★
+EMP-1771,Employee 771,Sales,November,83%,Reserved,Casual Leave,72 / 100,3 ★
+EMP-1772,Employee 772,Procurement,August,96%,In Stock,None,94 / 100,5 ★
+EMP-1773,Employee 773,HR,May,86%,Reserved,Sick Leave,78 / 100,5 ★
+EMP-1774,Employee 774,Marketing,October,96%,In Stock,None,96 / 100,5 ★
+EMP-1775,Employee 775,Legal,September,77%,On Leave,Vacation,71 / 100,3 ★
+EMP-1776,Employee 776,IT,July,80%,Reserved,Casual Leave,82 / 100,3 ★
+EMP-1777,Employee 777,Procurement,September,76%,On Leave,Vacation,73 / 100,2 ★
+EMP-1778,Employee 778,HR,December,74%,Reserved,Special Leave,76 / 100,2 ★
+EMP-1779,Employee 779,Customer Support,November,94%,In Stock,Casual Leave,80 / 100,4 ★
+EMP-1780,Employee 780,Engineering,March,90%,In Stock,Casual Leave,85 / 100,5 ★
+EMP-1781,Employee 781,HR,November,93%,Reserved,None,82 / 100,5 ★
+EMP-1782,Employee 782,Operations,March,98%,In Stock,None,91 / 100,5 ★
+EMP-1783,Employee 783,Administration,August,78%,Reserved,Sick Leave,62 / 100,4 ★
+EMP-1784,Employee 784,R&D,August,81%,Reserved,None,82 / 100,3 ★
+EMP-1785,Employee 785,Legal,February,74%,On Leave,Sick Leave,73 / 100,4 ★
+EMP-1786,Employee 786,Customer Support,February,81%,Reserved,None,71 / 100,3 ★
+EMP-1787,Employee 787,HR,February,98%,In Stock,None,100 / 100,5 ★
+EMP-1788,Employee 788,Procurement,December,91%,In Stock,Casual Leave,93 / 100,4 ★
+EMP-1789,Employee 789,Procurement,November,86%,Reserved,Casual Leave,90 / 100,3 ★
+EMP-1790,Employee 790,Sales,September,81%,Reserved,None,70 / 100,5 ★
+EMP-1791,Employee 791,Sales,November,86%,Reserved,Casual Leave,83 / 100,3 ★
+EMP-1792,Employee 792,Administration,April,95%,Reserved,Casual Leave,80 / 100,4 ★
+EMP-1793,Employee 793,Marketing,May,94%,In Stock,None,95 / 100,4 ★
+EMP-1794,Employee 794,HR,March,71%,Reserved,Sick Leave,71 / 100,4 ★
+EMP-1795,Employee 795,Engineering,July,98%,In Stock,None,95 / 100,5 ★
+EMP-1796,Employee 796,Administration,October,81%,In Stock,None,75 / 100,3 ★
+EMP-1797,Employee 797,Finance,April,93%,Reserved,Casual Leave,95 / 100,4 ★
+EMP-1798,Employee 798,Administration,July,76%,Reserved,Sick Leave,73 / 100,2 ★
+EMP-1799,Employee 799,HR,April,78%,Reserved,Sick Leave,65 / 100,3 ★
+EMP-1800,Employee 800,Procurement,April,93%,Reserved,Casual Leave,87 / 100,4 ★
+EMP-1801,Employee 801,Legal,October,77%,On Leave,Special Leave,78 / 100,2 ★
+EMP-1802,Employee 802,IT,July,99%,In Stock,None,90 / 100,5 ★
+EMP-1803,Employee 803,R&D,March,77%,On Leave,Vacation,71 / 100,4 ★
+EMP-1804,Employee 804,Finance,March,85%,Reserved,Sick Leave,81 / 100,3 ★
+EMP-1805,Employee 805,Engineering,February,72%,Reserved,Special Leave,64 / 100,4 ★
+EMP-1806,Employee 806,Legal,November,70%,On Leave,Vacation,62 / 100,2 ★
+EMP-1807,Employee 807,Administration,February,72%,On Leave,Vacation,79 / 100,2 ★
+EMP-1808,Employee 808,R&D,August,75%,Reserved,Special Leave,60 / 100,2 ★
+EMP-1809,Employee 809,Procurement,October,85%,In Stock,Casual Leave,89 / 100,3 ★
+EMP-1810,Employee 810,HR,April,93%,Reserved,None,87 / 100,4 ★
+EMP-1811,Employee 811,Customer Support,July,79%,On Leave,Special Leave,70 / 100,4 ★
+EMP-1812,Employee 812,Administration,November,82%,Reserved,Casual Leave,87 / 100,5 ★
+EMP-1813,Employee 813,Administration,November,90%,In Stock,None,80 / 100,4 ★
+EMP-1814,Employee 814,HR,August,74%,Reserved,Special Leave,61 / 100,4 ★
+EMP-1815,Employee 815,Sales,March,91%,In Stock,Casual Leave,93 / 100,5 ★
+EMP-1816,Employee 816,Engineering,October,78%,On Leave,Special Leave,65 / 100,2 ★
+EMP-1817,Employee 817,Marketing,December,98%,In Stock,None,97 / 100,5 ★
+EMP-1818,Employee 818,Finance,November,73%,Reserved,Special Leave,68 / 100,2 ★
+EMP-1819,Employee 819,R&D,July,90%,Reserved,Casual Leave,80 / 100,4 ★
+EMP-1820,Employee 820,Customer Support,February,84%,In Stock,None,80 / 100,5 ★
+EMP-1821,Employee 821,Operations,May,99%,In Stock,None,96 / 100,5 ★
+EMP-1822,Employee 822,HR,July,92%,In Stock,Casual Leave,83 / 100,5 ★
+EMP-1823,Employee 823,R&D,January,70%,On Leave,Vacation,60 / 100,2 ★
+EMP-1824,Employee 824,R&D,April,72%,Reserved,Vacation,62 / 100,4 ★
+EMP-1825,Employee 825,Marketing,November,73%,On Leave,Special Leave,77 / 100,2 ★
+EMP-1826,Employee 826,IT,May,96%,In Stock,None,99 / 100,5 ★
+EMP-1827,Employee 827,IT,August,99%,In Stock,None,94 / 100,5 ★
+EMP-1828,Employee 828,R&D,January,75%,Reserved,Special Leave,71 / 100,2 ★
+EMP-1829,Employee 829,Sales,August,75%,Reserved,Sick Leave,79 / 100,4 ★
+EMP-1830,Employee 830,Finance,September,84%,In Stock,None,89 / 100,3 ★
+EMP-1831,Employee 831,Engineering,October,79%,On Leave,Vacation,64 / 100,2 ★
+EMP-1832,Employee 832,Customer Support,May,88%,Reserved,Sick Leave,82 / 100,4 ★
+EMP-1833,Employee 833,IT,February,100%,In Stock,None,100 / 100,5 ★
+EMP-1834,Employee 834,Legal,December,84%,In Stock,None,75 / 100,4 ★
+EMP-1835,Employee 835,Sales,November,98%,In Stock,None,97 / 100,5 ★
+EMP-1836,Employee 836,Administration,June,95%,In Stock,Casual Leave,86 / 100,4 ★
+EMP-1837,Employee 837,IT,February,91%,In Stock,None,85 / 100,5 ★
+EMP-1838,Employee 838,Finance,March,90%,In Stock,Casual Leave,86 / 100,4 ★
+EMP-1839,Employee 839,HR,October,70%,Reserved,Special Leave,78 / 100,3 ★
+EMP-1840,Employee 840,Administration,December,93%,In Stock,Casual Leave,93 / 100,5 ★
+EMP-1841,Employee 841,Legal,October,92%,Reserved,None,86 / 100,5 ★
+EMP-1842,Employee 842,Operations,February,92%,Reserved,Casual Leave,84 / 100,5 ★
+EMP-1843,Employee 843,Finance,March,85%,Reserved,Sick Leave,83 / 100,3 ★
+EMP-1844,Employee 844,Finance,April,80%,In Stock,None,80 / 100,3 ★
+EMP-1845,Employee 845,Legal,February,82%,Reserved,None,74 / 100,3 ★
+EMP-1846,Employee 846,Sales,July,75%,On Leave,Vacation,75 / 100,2 ★
+EMP-1847,Employee 847,Operations,March,77%,On Leave,Vacation,69 / 100,2 ★
+EMP-1848,Employee 848,R&D,April,91%,In Stock,None,87 / 100,4 ★
+EMP-1849,Employee 849,R&D,December,81%,In Stock,None,81 / 100,4 ★
+EMP-1850,Employee 850,Legal,July,84%,Reserved,Casual Leave,87 / 100,3 ★
+EMP-1851,Employee 851,Operations,October,97%,In Stock,None,96 / 100,5 ★
+EMP-1852,Employee 852,Sales,June,99%,In Stock,None,92 / 100,5 ★
+EMP-1853,Employee 853,R&D,February,92%,Reserved,Casual Leave,94 / 100,5 ★
+EMP-1854,Employee 854,Legal,February,98%,In Stock,None,90 / 100,5 ★
+EMP-1855,Employee 855,Operations,November,78%,On Leave,Sick Leave,61 / 100,4 ★
+EMP-1856,Employee 856,Engineering,May,93%,Reserved,None,94 / 100,4 ★
+EMP-1857,Employee 857,Engineering,December,85%,In Stock,None,83 / 100,5 ★
+EMP-1858,Employee 858,Legal,January,70%,On Leave,Sick Leave,76 / 100,3 ★
+EMP-1859,Employee 859,Operations,March,76%,On Leave,Special Leave,73 / 100,3 ★
+EMP-1860,Employee 860,IT,December,94%,In Stock,Casual Leave,91 / 100,4 ★
+EMP-1861,Employee 861,Legal,March,81%,In Stock,None,78 / 100,5 ★
+EMP-1862,Employee 862,Sales,June,75%,On Leave,Sick Leave,62 / 100,3 ★
+EMP-1863,Employee 863,Finance,May,89%,In Stock,Sick Leave,90 / 100,5 ★
+EMP-1864,Employee 864,Customer Support,September,90%,Reserved,Casual Leave,83 / 100,4 ★
+EMP-1865,Employee 865,Administration,November,78%,On Leave,Vacation,64 / 100,4 ★
+EMP-1866,Employee 866,HR,August,85%,Reserved,Sick Leave,74 / 100,4 ★
+EMP-1867,Employee 867,Operations,April,95%,In Stock,None,91 / 100,5 ★
+EMP-1868,Employee 868,Operations,April,75%,Reserved,Vacation,71 / 100,4 ★
+EMP-1869,Employee 869,R&D,January,71%,Reserved,Sick Leave,64 / 100,2 ★
+EMP-1870,Employee 870,Finance,August,84%,In Stock,Casual Leave,74 / 100,5 ★
+EMP-1871,Employee 871,Sales,August,82%,In Stock,None,74 / 100,3 ★
+EMP-1872,Employee 872,Marketing,February,89%,Reserved,None,90 / 100,5 ★
+EMP-1873,Employee 873,HR,March,75%,On Leave,Sick Leave,67 / 100,2 ★
+EMP-1874,Employee 874,Sales,November,100%,In Stock,None,100 / 100,5 ★
+EMP-1875,Employee 875,Sales,July,90%,In Stock,Casual Leave,84 / 100,4 ★
+EMP-1876,Employee 876,Legal,August,78%,On Leave,Sick Leave,61 / 100,2 ★
+EMP-1877,Employee 877,Legal,April,95%,Reserved,Casual Leave,88 / 100,4 ★
+EMP-1878,Employee 878,HR,March,81%,Reserved,Casual Leave,86 / 100,5 ★
+EMP-1879,Employee 879,Finance,September,76%,Reserved,Sick Leave,79 / 100,4 ★
+EMP-1880,Employee 880,Administration,June,93%,In Stock,None,82 / 100,4 ★
+EMP-1881,Employee 881,R&D,January,82%,Reserved,Sick Leave,81 / 100,4 ★
+EMP-1882,Employee 882,R&D,March,86%,Reserved,None,77 / 100,3 ★
+EMP-1883,Employee 883,IT,September,77%,Reserved,Sick Leave,76 / 100,3 ★
+EMP-1884,Employee 884,Marketing,October,86%,Reserved,Sick Leave,75 / 100,4 ★
+EMP-1885,Employee 885,IT,June,77%,On Leave,Vacation,70 / 100,2 ★
+EMP-1886,Employee 886,Procurement,April,76%,On Leave,Special Leave,62 / 100,2 ★
+EMP-1887,Employee 887,HR,June,86%,Reserved,Casual Leave,73 / 100,5 ★
+EMP-1888,Employee 888,Procurement,April,74%,Reserved,Vacation,61 / 100,3 ★
+EMP-1889,Employee 889,Finance,April,99%,In Stock,None,100 / 100,5 ★
+EMP-1890,Employee 890,Legal,December,95%,In Stock,None,85 / 100,5 ★
+EMP-1891,Employee 891,IT,August,73%,On Leave,Vacation,60 / 100,2 ★
+EMP-1892,Employee 892,R&D,April,96%,In Stock,None,99 / 100,5 ★
+EMP-1893,Employee 893,Procurement,January,98%,In Stock,None,98 / 100,5 ★
+EMP-1894,Employee 894,Engineering,March,72%,Reserved,Sick Leave,62 / 100,3 ★
+EMP-1895,Employee 895,Finance,January,77%,Reserved,Vacation,72 / 100,4 ★
+EMP-1896,Employee 896,R&D,July,90%,Reserved,None,83 / 100,5 ★
+EMP-1897,Employee 897,Engineering,August,74%,On Leave,Special Leave,69 / 100,2 ★
+EMP-1898,Employee 898,Finance,November,83%,Reserved,Casual Leave,90 / 100,3 ★
+EMP-1899,Employee 899,IT,November,77%,On Leave,Special Leave,69 / 100,3 ★
+EMP-1900,Employee 900,Sales,June,78%,Reserved,Vacation,72 / 100,3 ★
+EMP-1901,Employee 901,Legal,November,70%,On Leave,Vacation,67 / 100,2 ★
+EMP-1902,Employee 902,Administration,November,81%,Reserved,None,85 / 100,3 ★
+EMP-1903,Employee 903,Finance,November,83%,In Stock,None,81 / 100,4 ★
+EMP-1904,Employee 904,R&D,March,100%,In Stock,None,99 / 100,5 ★
+EMP-1905,Employee 905,Sales,December,99%,In Stock,None,94 / 100,5 ★
+EMP-1906,Employee 906,Administration,July,78%,On Leave,Sick Leave,76 / 100,4 ★
+EMP-1907,Employee 907,HR,September,92%,Reserved,None,92 / 100,4 ★
+EMP-1908,Employee 908,Finance,November,97%,In Stock,None,92 / 100,5 ★
+EMP-1909,Employee 909,Marketing,January,71%,Reserved,Special Leave,77 / 100,2 ★
+EMP-1910,Employee 910,IT,August,83%,Reserved,Casual Leave,83 / 100,3 ★
+EMP-1911,Employee 911,R&D,December,97%,In Stock,None,99 / 100,5 ★
+EMP-1912,Employee 912,Operations,May,76%,On Leave,Vacation,62 / 100,4 ★
+EMP-1913,Employee 913,R&D,October,70%,On Leave,Vacation,62 / 100,3 ★
+EMP-1914,Employee 914,Sales,April,97%,In Stock,None,94 / 100,5 ★
+EMP-1915,Employee 915,Procurement,August,93%,Reserved,Casual Leave,94 / 100,5 ★
+EMP-1916,Employee 916,Marketing,April,78%,On Leave,Special Leave,69 / 100,3 ★
+EMP-1917,Employee 917,HR,October,70%,Reserved,Special Leave,80 / 100,3 ★
+EMP-1918,Employee 918,Engineering,January,86%,Reserved,None,72 / 100,5 ★
+EMP-1919,Employee 919,Sales,May,95%,In Stock,None,92 / 100,5 ★
+EMP-1920,Employee 920,Engineering,January,81%,In Stock,None,87 / 100,5 ★
+EMP-1921,Employee 921,IT,May,93%,In Stock,None,91 / 100,5 ★
+EMP-1922,Employee 922,Administration,March,86%,In Stock,Casual Leave,82 / 100,5 ★
+EMP-1923,Employee 923,HR,November,71%,On Leave,Vacation,60 / 100,3 ★
+EMP-1924,Employee 924,HR,December,86%,In Stock,None,75 / 100,3 ★
+EMP-1925,Employee 925,Sales,August,87%,In Stock,Sick Leave,77 / 100,3 ★
+EMP-1926,Employee 926,Legal,January,95%,Reserved,Casual Leave,83 / 100,5 ★
+EMP-1927,Employee 927,Legal,February,79%,Reserved,Vacation,60 / 100,4 ★
+EMP-1928,Employee 928,R&D,November,95%,In Stock,None,94 / 100,4 ★
+EMP-1929,Employee 929,Engineering,July,88%,Reserved,Sick Leave,82 / 100,5 ★
+EMP-1930,Employee 930,Customer Support,January,76%,On Leave,Vacation,65 / 100,3 ★
+EMP-1931,Employee 931,Engineering,October,86%,Reserved,None,82 / 100,3 ★
+EMP-1932,Employee 932,Customer Support,August,99%,In Stock,None,96 / 100,5 ★
+EMP-1933,Employee 933,Engineering,May,75%,On Leave,Sick Leave,79 / 100,2 ★
+EMP-1934,Employee 934,Sales,November,85%,Reserved,None,83 / 100,5 ★
+EMP-1935,Employee 935,HR,October,75%,Reserved,Special Leave,62 / 100,2 ★
+EMP-1936,Employee 936,Procurement,November,82%,Reserved,None,72 / 100,4 ★
+EMP-1937,Employee 937,IT,March,80%,Reserved,Sick Leave,85 / 100,5 ★
+EMP-1938,Employee 938,R&D,November,81%,Reserved,Sick Leave,84 / 100,5 ★
+EMP-1939,Employee 939,Operations,June,78%,Reserved,Vacation,78 / 100,3 ★
+EMP-1940,Employee 940,Finance,August,82%,In Stock,Casual Leave,75 / 100,5 ★
+EMP-1941,Employee 941,Customer Support,December,88%,Reserved,None,88 / 100,5 ★
+EMP-1942,Employee 942,Operations,November,90%,In Stock,None,83 / 100,5 ★
+EMP-1943,Employee 943,Sales,February,90%,In Stock,None,87 / 100,4 ★
+EMP-1944,Employee 944,Administration,August,75%,Reserved,Special Leave,79 / 100,3 ★
+EMP-1945,Employee 945,Marketing,July,90%,In Stock,Casual Leave,88 / 100,4 ★
+EMP-1946,Employee 946,IT,May,91%,In Stock,None,82 / 100,4 ★
+EMP-1947,Employee 947,Legal,February,81%,In Stock,None,75 / 100,5 ★
+EMP-1948,Employee 948,Procurement,January,89%,Reserved,Casual Leave,71 / 100,3 ★
+EMP-1949,Employee 949,Sales,July,73%,On Leave,Sick Leave,63 / 100,3 ★
+EMP-1950,Employee 950,Finance,May,70%,Reserved,Special Leave,79 / 100,2 ★
+EMP-1951,Employee 951,Customer Support,April,85%,In Stock,Casual Leave,89 / 100,4 ★
+EMP-1952,Employee 952,Legal,February,95%,Reserved,Casual Leave,89 / 100,4 ★
+EMP-1953,Employee 953,Marketing,August,81%,Reserved,Casual Leave,89 / 100,4 ★
+EMP-1954,Employee 954,Engineering,July,98%,In Stock,None,98 / 100,5 ★
+EMP-1955,Employee 955,HR,November,71%,Reserved,Sick Leave,70 / 100,3 ★
+EMP-1956,Employee 956,Finance,January,72%,Reserved,Sick Leave,70 / 100,3 ★
+EMP-1957,Employee 957,Administration,December,75%,On Leave,Special Leave,72 / 100,2 ★
+EMP-1958,Employee 958,Sales,September,83%,In Stock,None,81 / 100,4 ★
+EMP-1959,Employee 959,Administration,December,92%,In Stock,None,93 / 100,5 ★
+EMP-1960,Employee 960,IT,May,84%,In Stock,None,83 / 100,4 ★
+EMP-1961,Employee 961,Procurement,March,83%,Reserved,Casual Leave,78 / 100,3 ★
+EMP-1962,Employee 962,Sales,October,94%,In Stock,Casual Leave,93 / 100,4 ★
+EMP-1963,Employee 963,Finance,June,73%,Reserved,Vacation,71 / 100,4 ★
+EMP-1964,Employee 964,Customer Support,September,84%,In Stock,None,76 / 100,3 ★
+EMP-1965,Employee 965,Sales,September,82%,Reserved,None,80 / 100,3 ★
+EMP-1966,Employee 966,Marketing,August,77%,Reserved,Vacation,74 / 100,4 ★
+EMP-1967,Employee 967,Sales,April,87%,Reserved,None,80 / 100,3 ★
+EMP-1968,Employee 968,HR,June,93%,Reserved,None,89 / 100,5 ★
+EMP-1969,Employee 969,HR,July,74%,Reserved,Sick Leave,64 / 100,4 ★
+EMP-1970,Employee 970,Engineering,February,78%,Reserved,Special Leave,70 / 100,3 ★
+EMP-1971,Employee 971,Marketing,August,88%,Reserved,None,87 / 100,5 ★
+EMP-1972,Employee 972,Legal,September,87%,In Stock,None,78 / 100,3 ★
+EMP-1973,Employee 973,Sales,April,98%,In Stock,None,94 / 100,5 ★
+EMP-1974,Employee 974,Sales,December,82%,In Stock,Sick Leave,75 / 100,5 ★
+EMP-1975,Employee 975,Finance,December,89%,Reserved,Casual Leave,88 / 100,5 ★
+EMP-1976,Employee 976,Administration,March,88%,Reserved,Casual Leave,85 / 100,4 ★
+EMP-1977,Employee 977,Customer Support,January,84%,Reserved,Casual Leave,72 / 100,4 ★
+EMP-1978,Employee 978,Engineering,December,87%,Reserved,Casual Leave,88 / 100,5 ★
+EMP-1979,Employee 979,Legal,November,92%,In Stock,Casual Leave,95 / 100,5 ★
+EMP-1980,Employee 980,Marketing,January,73%,On Leave,Special Leave,79 / 100,2 ★
+EMP-1981,Employee 981,R&D,September,79%,Reserved,Sick Leave,73 / 100,4 ★
+EMP-1982,Employee 982,Operations,July,98%,In Stock,None,95 / 100,5 ★
+EMP-1983,Employee 983,IT,December,82%,In Stock,Sick Leave,72 / 100,5 ★
+EMP-1984,Employee 984,Customer Support,June,93%,In Stock,Casual Leave,87 / 100,5 ★
+EMP-1985,Employee 985,Sales,November,80%,In Stock,None,83 / 100,4 ★
+EMP-1986,Employee 986,Legal,April,89%,Reserved,Casual Leave,76 / 100,3 ★
+EMP-1987,Employee 987,IT,January,79%,Reserved,Sick Leave,72 / 100,3 ★
+EMP-1988,Employee 988,Sales,April,97%,In Stock,None,98 / 100,5 ★
+EMP-1989,Employee 989,HR,February,95%,Reserved,Casual Leave,88 / 100,5 ★
+EMP-1990,Employee 990,HR,April,88%,Reserved,Casual Leave,78 / 100,5 ★
+EMP-1991,Employee 991,R&D,January,87%,Reserved,Sick Leave,83 / 100,4 ★
+EMP-1992,Employee 992,IT,September,77%,Reserved,Special Leave,79 / 100,3 ★
+EMP-1993,Employee 993,Marketing,June,95%,Reserved,Casual Leave,95 / 100,4 ★
+EMP-1994,Employee 994,Engineering,January,70%,On Leave,Special Leave,71 / 100,4 ★
+EMP-1995,Employee 995,R&D,July,76%,Reserved,Vacation,71 / 100,2 ★
+EMP-1996,Employee 996,Engineering,July,72%,On Leave,Sick Leave,68 / 100,3 ★
+EMP-1997,Employee 997,Sales,February,81%,Reserved,None,86 / 100,4 ★
+EMP-1998,Employee 998,Engineering,August,78%,Reserved,Sick Leave,72 / 100,2 ★
+EMP-1999,Employee 999,Engineering,March,91%,Reserved,None,80 / 100,5 ★
+EMP-2000,Employee 1000,R&D,June,81%,Reserved,Sick Leave,70 / 100,3 ★

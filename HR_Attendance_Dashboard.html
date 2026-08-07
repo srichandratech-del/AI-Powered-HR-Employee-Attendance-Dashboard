@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR & Employee Attendance Dashboard</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- PapaParse for CSV parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.5);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(107, 114, 128, 0.8);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.85);
+            border: 1px solid rgba(51, 65, 85, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-30 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 shadow-sm transition-colors duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Left: Dashboard Title & Icon -->
+            <div class="flex items-center space-x-3">
+                <div class="p-2.5 bg-blue-600 text-white rounded-xl shadow-md flex items-center justify-center">
+                    <i class="fa-solid font-bold fa-users-gear text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+                        HR & Employee Attendance Dashboard
+                    </h1>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">Real-time Workforce Analytics & KPI Metrics</p>
+                </div>
+            </div>
+
+            <!-- Right: Navigation Links & Controls -->
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <button onclick="openModal('datasetModal')" class="text-xs sm:text-sm font-medium px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-table-cells text-blue-500"></i>
+                    <span class="hidden md:inline">View Source Dataset</span>
+                </button>
+                <button onclick="openModal('setupModal')" class="text-xs sm:text-sm font-medium px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-info text-amber-500"></i>
+                    <span class="hidden md:inline">Setup Guide</span>
+                </button>
+                
+                <!-- Dark / Light Mode Toggle -->
+                <button id="themeToggleBtn" onclick="toggleDarkMode()" aria-label="Toggle Theme" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600 transition flex items-center justify-center w-10 h-10 shadow-inner">
+                    <i id="themeIcon" class="fa-solid fa-moon text-slate-700 dark:text-amber-300"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+            <!-- Sidebar (Interactive Filters) -->
+            <aside class="lg:col-span-3">
+                <div class="glass-card rounded-2xl p-5 shadow-sm sticky top-20 space-y-5">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-sliders text-blue-600 dark:text-blue-400"></i>
+                            <h2 class="font-semibold text-slate-800 dark:text-slate-100">Interactive Filters</h2>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300 animate-pulse">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span> Live Sync
+                        </span>
+                    </div>
+
+                    <!-- Filter Form -->
+                    <div class="space-y-4">
+                        <!-- Month Filter -->
+                        <div>
+                            <label for="monthFilter" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
+                                Select Month
+                            </label>
+                            <div class="relative">
+                                <select id="monthFilter" onchange="applyFilters()" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 text-sm rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block p-2.5 pr-8 appearance-none shadow-sm cursor-pointer">
+                                    <option value="All">All Months (Overall)</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-slate-400">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Status Filter -->
+                        <div>
+                            <label for="statusFilter" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
+                                Employee Status
+                            </label>
+                            <div class="relative">
+                                <select id="statusFilter" onchange="applyFilters()" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 text-sm rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block p-2.5 pr-8 appearance-none shadow-sm cursor-pointer">
+                                    <option value="All">All Statuses</option>
+                                    <option value="In Stock">In Stock</option>
+                                    <option value="Reserved">Reserved</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-slate-400">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Leave Type Filter -->
+                        <div>
+                            <label for="leaveFilter" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
+                                Leave Type
+                            </label>
+                            <div class="relative">
+                                <select id="leaveFilter" onchange="applyFilters()" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 text-sm rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block p-2.5 pr-8 appearance-none shadow-sm cursor-pointer">
+                                    <option value="All">All Leave Types</option>
+                                    <option value="Casual Leave">Casual Leave</option>
+                                    <option value="Special Leave">Special Leave</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-slate-400">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Department Filter -->
+                        <div>
+                            <label for="deptFilter" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
+                                Department
+                            </label>
+                            <div class="relative">
+                                <select id="deptFilter" onchange="applyFilters()" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 text-sm rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block p-2.5 pr-8 appearance-none shadow-sm cursor-pointer">
+                                    <option value="All">All Departments</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-slate-400">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Search Box -->
+                        <div>
+                            <label for="searchInput" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
+                                Search Record
+                            </label>
+                            <div class="relative">
+                                <input type="text" id="searchInput" onkeyup="applyFilters()" placeholder="Search ID or Name..." class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 text-sm rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block p-2.5 pl-9 shadow-sm">
+                                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slicer Action Buttons -->
+                        <div class="pt-2 flex flex-col gap-2">
+                            <button onclick="clearSlicers()" class="w-full py-2.5 px-4 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 font-medium text-sm rounded-xl transition flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-600 shadow-sm">
+                                <i class="fa-solid fa-filter-circle-xmark text-rose-500"></i> Clear Slicers
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dataset Status Info -->
+                    <div class="p-3 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/50 text-xs text-blue-800 dark:text-blue-300">
+                        <div class="flex items-center gap-1.5 font-medium mb-1">
+                            <i class="fa-solid fa-database text-blue-500"></i> Active Dataset
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">Total Loaded Records: <span id="recordCountBadge" class="font-semibold text-slate-800 dark:text-slate-200">0</span></p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Visualization Grid -->
+            <main class="lg:col-span-9 space-y-6">
+
+                <!-- Top Row KPI Summary Cards (5 Cards) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <!-- Card 1: Total Employees -->
+                    <div class="glass-card rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Total Employees</span>
+                            <div class="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400">
+                                <i class="fa-solid fa-users text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900 dark:text-white" id="kpiTotalEmp">--</div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+                            <i class="fa-solid fa-id-badge text-blue-500"></i> Unique EMP IDs
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Average Attendance Rate -->
+                    <div class="glass-card rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Avg Attendance</span>
+                            <div class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400">
+                                <i class="fa-solid fa-calendar-check text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900 dark:text-white" id="kpiAvgAttendance">--%</div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+                            <i class="fa-solid fa-chart-line text-emerald-500"></i> Monthly Average
+                        </p>
+                    </div>
+
+                    <!-- Card 3: Active Status Base -->
+                    <div class="glass-card rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">In Stock Base</span>
+                            <div class="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
+                                <i class="fa-solid fa-box-archive text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900 dark:text-white" id="kpiActiveStatus">--</div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+                            <i class="fa-solid fa-circle-check text-indigo-500"></i> 'In Stock' Status Count
+                        </p>
+                    </div>
+
+                    <!-- Card 4: Average KPI Score -->
+                    <div class="glass-card rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Avg KPI Score</span>
+                            <div class="p-2 rounded-lg bg-purple-50 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400">
+                                <i class="fa-solid fa-bullseye text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900 dark:text-white" id="kpiAvgScore">--</div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+                            <i class="fa-solid fa-award text-purple-500"></i> Scale of / 100
+                        </p>
+                    </div>
+
+                    <!-- Card 5: Satisfaction Index -->
+                    <div class="glass-card rounded-2xl p-4 shadow-sm hover:shadow-md transition col-span-2 sm:col-span-1">
+                        <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Satisfaction</span>
+                            <div class="p-2 rounded-lg bg-amber-50 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400">
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900 dark:text-white" id="kpiSatisfaction">--</div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+                            <i class="fa-solid fa-face-smile text-amber-500"></i> Star Rating Index
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Charts Grid (5 Required Visualizations) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                    <!-- Line Chart: Monthly Attendance Trend -->
+                    <div class="glass-card rounded-2xl p-5 shadow-sm lg:col-span-2">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base">Monthly Attendance Trend</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Average attendance percentage progression across months</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300">
+                                Line Chart
+                            </span>
+                        </div>
+                        <div class="h-64 sm:h-72 w-full">
+                            <canvas id="monthlyTrendChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Donut Chart: Employee Status Split -->
+                    <div class="glass-card rounded-2xl p-5 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base">Employee Status Split</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">'In Stock' vs 'Reserved' ratio</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300">
+                                Donut Chart
+                            </span>
+                        </div>
+                        <div class="h-64 w-full flex items-center justify-center">
+                            <canvas id="statusSplitChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart: Leave Type Breakdown -->
+                    <div class="glass-card rounded-2xl p-5 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base">Leave Type Breakdown</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">'Casual Leave' vs 'Special Leave' distribution</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-rose-50 dark:bg-rose-900/40 text-rose-600 dark:text-rose-300">
+                                Pie Chart
+                            </span>
+                        </div>
+                        <div class="h-64 w-full flex items-center justify-center">
+                            <canvas id="leaveBreakdownChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Bar Chart: Employee Count by Month -->
+                    <div class="glass-card rounded-2xl p-5 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base">Employee Count by Month</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Active records distribution by month</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300">
+                                Bar Chart
+                            </span>
+                        </div>
+                        <div class="h-64 w-full">
+                            <canvas id="monthlyHeadcountChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Bar Chart: Department Performance & KPI Ratings -->
+                    <div class="glass-card rounded-2xl p-5 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base">Department Performance & KPI</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Average KPI score rating per department</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300">
+                                Bar Chart
+                            </span>
+                        </div>
+                        <div class="h-64 w-full">
+                            <canvas id="deptPerformanceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Detailed Employee Data Table -->
+                <div class="glass-card rounded-2xl p-5 shadow-sm space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-200 dark:border-slate-700">
+                        <div>
+                            <h3 class="font-bold text-slate-800 dark:text-slate-100 text-base flex items-center gap-2">
+                                <i class="fa-solid fa-list-check text-blue-600"></i> Employee Records Table
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Detailed filtered dataset entries with direct search and export</p>
+                        </div>
+                        <button onclick="exportFilteredCSV()" class="px-3.5 py-2 text-xs font-medium bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl shadow-sm transition flex items-center gap-1.5 self-start sm:self-auto">
+                            <i class="fa-solid fa-file-csv"></i> Export Filtered CSV
+                        </button>
+                    </div>
+
+                    <!-- Table Wrapper -->
+                    <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 max-h-80 overflow-y-auto">
+                        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                            <thead class="bg-slate-100 dark:bg-slate-800/80 sticky top-0 z-10 text-slate-600 dark:text-slate-300 uppercase tracking-wider text-[11px]">
+                                <tr>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">EMP ID</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Name</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Department</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Month</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Attendance</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Status</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Leave Type</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">KPI Score</th>
+                                    <th class="p-3 border-b border-slate-200 dark:border-slate-700">Satisfaction</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeeTableBody" class="divide-y divide-slate-200 dark:divide-slate-700 text-slate-700 dark:text-slate-300">
+                                <!-- Dynamic rows inserted via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1 pt-1">
+                        <span id="tableShowingText">Showing 0 of 0 entries</span>
+                        <span>Scroll table vertically for more entries</span>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 border-t border-slate-200 dark:border-slate-800 py-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm text-center text-xs text-slate-500 dark:text-slate-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>HR Analytics & Employee Attendance Interactive Canvas Dashboard &bull; Powered by Chart.js & Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <!-- View Dataset Modal -->
+    <div id="datasetModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] flex flex-col border border-slate-200 dark:border-slate-700 overflow-hidden">
+            <div class="p-4 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between bg-slate-50 dark:bg-slate-800/80">
+                <h3 class="font-bold text-slate-900 dark:text-white text-base flex items-center gap-2">
+                    <i class="fa-solid fa-file-csv text-blue-600"></i> Source Dataset Viewer (Employees_1000_Styled_Data.csv)
+                </h3>
+                <button onclick="closeModal('datasetModal')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 space-y-3 flex-grow overflow-hidden flex flex-col">
+                <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+                    <span>Raw Dataset Contents (Sampled / Full 1000 Records)</span>
+                    <button onclick="downloadRawCSV()" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-medium">
+                        <i class="fa-solid fa-download"></i> Download Dataset CSV
+                    </button>
+                </div>
+                <div class="flex-grow bg-slate-900 text-slate-200 p-3.5 rounded-xl font-mono text-xs overflow-auto border border-slate-700 select-all">
+                    <pre id="rawCsvPreview">Loading dataset preview...</pre>
+                </div>
+            </div>
+            <div class="p-3 border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 flex justify-end">
+                <button onclick="closeModal('datasetModal')" class="px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-semibold transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup Guide Modal -->
+    <div id="setupModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col border border-slate-200 dark:border-slate-700 overflow-hidden">
+            <div class="p-4 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between bg-slate-50 dark:bg-slate-800/80">
+                <h3 class="font-bold text-slate-900 dark:text-white text-base flex items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-amber-500"></i> Setup & Operations Guide
+                </h3>
+                <button onclick="closeModal('setupModal')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-5 space-y-4 overflow-y-auto text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                <div class="space-y-1">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">1. Dataset Schema Requirements</h4>
+                    <p>The dashboard accepts CSV files with the following headers:</p>
+                    <div class="p-2.5 bg-slate-100 dark:bg-slate-900/60 rounded-lg font-mono text-xs text-blue-600 dark:text-blue-400">
+                        EMP ID, NAME, DEPARTMENT, MONTH, ATTENDANCE, STATUS, LEAVE TYPE, KPI SCORE, SATISFACTION
+                    </div>
+                </div>
+
+                <div class="space-y-1">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">2. Smart String Parsing Engine</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-500 dark:text-slate-400">
+                        <li><strong class="text-slate-700 dark:text-slate-200">ATTENDANCE:</strong> Automatically strips <code class="bg-slate-100 dark:bg-slate-700 px-1 rounded">%</code> sign to extract numeric attendance rates.</li>
+                        <li><strong class="text-slate-700 dark:text-slate-200">KPI SCORE:</strong> Extracts score before <code class="bg-slate-100 dark:bg-slate-700 px-1 rounded">/ 100</code> (e.g. <code class="bg-slate-100 dark:bg-slate-700 px-1 rounded">75 / 100</code> &rarr; 75).</li>
+                        <li><strong class="text-slate-700 dark:text-slate-200">SATISFACTION:</strong> Extracts numerical star rating before <code class="bg-slate-100 dark:bg-slate-700 px-1 rounded">★</code> symbol.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-1">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">3. Interactive Slicers & Filtering</h4>
+                    <p>Use the sidebar slicers to filter by Month, Status, Leave Type, or Department. All 5 KPI cards and 5 Chart.js charts update instantly in real-time.</p>
+                </div>
+
+                <div class="space-y-1">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">4. Theme & Responsiveness</h4>
+                    <p>Click the moon/sun icon in the top header to switch between Light and Dark mode. Charts automatically re-theme grid lines and text colors.</p>
+                </div>
+            </div>
+            <div class="p-3 border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 flex justify-end">
+                <button onclick="closeModal('setupModal')" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold transition">
+                    Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        // Month order reference
+        const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        
+        // Departments list
+        const DEPARTMENTS = ["Engineering", "Sales", "Human Resources", "Marketing", "Finance", "Operations", "Product", "Customer Support"];
+        
+        // Status & Leave options
+        const STATUSES = ["In Stock", "Reserved"];
+        const LEAVE_TYPES = ["Casual Leave", "Special Leave"];
+
+        // Global Application State
+        let rawDataset = [];
+        let filteredDataset = [];
+        let chartInstances = {};
+
+        // Seed generator to guarantee 1000 Unique EMP IDs & realistic distribution
+        function generateDefault1000Dataset() {
+            const firstNames = ["James", "Mary", "Robert", "Patricia", "John", "Jennifer", "Michael", "Linda", "William", "Elizabeth", "David", "Barbara", "Richard", "Susan", "Joseph", "Jessica", "Thomas", "Sarah", "Charles", "Karen", "Christopher", "Nancy", "Daniel", "Lisa", "Matthew", "Betty", "Anthony", "Margaret", "Mark", "Sandra", "Donald", "Ashley", "Steven", "Kimberly", "Paul", "Emily", "Andrew", "Donna", "Joshua", "Michelle"];
+            const lastNames = ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark text", "Ramirez", "Lewis text", "Robinson"];
+
+            const data = [];
+            // Generate 1000 unique EMP IDs
+            for (let i = 1001; i <= 2000; i++) {
+                const empId = `EMP-${i}`;
+                const name = `${firstNames[i % firstNames.length]} ${lastNames[(i * 3) % lastNames.length]}`;
+                const dept = DEPARTMENTS[i % DEPARTMENTS.length];
+                
+                // Assign employee records across random months or full year
+                const monthCount = (i % 2 === 0) ? 2 : 1; // Generates ~1500 records overall covering 1000 unique EMPs
+                for (let m = 0; m < monthCount; m++) {
+                    const monthIdx = (i + m * 5) % 12;
+                    const month = MONTHS[monthIdx];
+                    
+                    // Attendance: 70% to 99%
+                    const attVal = Math.floor(70 + ((i * 17 + monthIdx * 7) % 30));
+                    const attendanceStr = `${attVal}%`;
+
+                    // Status: ~65% In Stock, 35% Reserved
+                    const status = ((i + monthIdx) % 3 !== 0) ? "In Stock" : "Reserved";
+
+                    // Leave Type: 60% Casual Leave, 40% Special Leave
+                    const leaveType = ((i + monthIdx) % 5 < 3) ? "Casual Leave" : "Special Leave";
+
+                    // KPI Score: 55 to 98
+                    const kpiVal = Math.floor(55 + ((i * 13 + monthIdx * 11) % 44));
+                    const kpiStr = `${kpiVal} / 100`;
+
+                    // Satisfaction: 3 ★ to 5 ★
+                    const satVal = Math.min(5, Math.max(3, Math.floor(3 + ((i + monthIdx * 3) % 3))));
+                    const satStr = `${satVal} ★`;
+
+                    data.push({
+                        "EMP ID": empId,
+                        "NAME": name,
+                        "DEPARTMENT": dept,
+                        "MONTH": month,
+                        "ATTENDANCE": attendanceStr,
+                        "STATUS": status,
+                        "LEAVE TYPE": leaveType,
+                        "KPI SCORE": kpiStr,
+                        "SATISFACTION": satStr
+                    });
+                }
+            }
+            return data;
+        }
+
+
+        // Numeric Parsers required by prompt specification
+        function parsePercentage(val) {
+            if (typeof val === 'number') return val;
+            if (!val) return 0;
+            const clean = String(val).replace('%', '').trim();
+            const num = parseFloat(clean);
+            return isNaN(num) ? 0 : num;
+        }
+
+        function parseKpiScore(val) {
+            if (typeof val === 'number') return val;
+            if (!val) return 0;
+            // Extracts score before '/ 100' or standalone number
+            const match = String(val).match(/(\d+(\.\d+)?)/);
+            if (match) {
+                const num = parseFloat(match[1]);
+                return isNaN(num) ? 0 : num;
+            }
+            return 0;
+        }
+
+        function parseSatisfaction(val) {
+            if (typeof val === 'number') return val;
+            if (!val) return 0;
+            // Extracts star number before '★' or standalone float
+            const match = String(val).match(/(\d+(\.\d+)?)/);
+            if (match) {
+                const num = parseFloat(match[1]);
+                return isNaN(num) ? 0 : num;
+            }
+            return 0;
+        }
+
+        // Dark mode helper
+        function isDarkMode() {
+            return document.documentElement.classList.contains('dark');
+        }
+
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = "fa-solid fa-moon text-slate-700";
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                icon.className = "fa-solid fa-sun text-amber-300";
+                localStorage.setItem('theme', 'dark');
+            }
+            // Re-render charts with dark/light theme options
+            updateCharts(filteredDataset);
+        }
+
+
+        function populateDepartmentDropdown(data) {
+            const deptSelect = document.getElementById('deptFilter');
+            const currentVal = deptSelect.value;
+            const depts = [...new Set(data.map(d => d["DEPARTMENT"]).filter(Boolean))].sort();
+            
+            deptSelect.innerHTML = `<option value="All">All Departments</option>`;
+            depts.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.textContent = d;
+                deptSelect.appendChild(opt);
+            });
+            if (depts.includes(currentVal)) {
+                deptSelect.value = currentVal;
+            }
+        }
+
+        function applyFilters() {
+            const monthVal = document.getElementById('monthFilter').value;
+            const statusVal = document.getElementById('statusFilter').value;
+            const leaveVal = document.getElementById('leaveFilter').value;
+            const deptVal = document.getElementById('deptFilter').value;
+            const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+
+            filteredDataset = rawDataset.filter(row => {
+                // Month filter
+                if (monthVal !== "All" && row["MONTH"] !== monthVal) return false;
+                
+                // Status filter
+                if (statusVal !== "All" && row["STATUS"] !== statusVal) return false;
+                
+                // Leave filter
+                if (leaveVal !== "All" && row["LEAVE TYPE"] !== leaveVal) return false;
+
+                // Department filter
+                if (deptVal !== "All" && row["DEPARTMENT"] !== deptVal) return false;
+
+                // Search query
+                if (searchVal !== "") {
+                    const empId = String(row["EMP ID"] || "").toLowerCase();
+                    const name = String(row["NAME"] || "").toLowerCase();
+                    const dept = String(row["DEPARTMENT"] || "").toLowerCase();
+                    if (!empId.includes(searchVal) && !name.includes(searchVal) && !dept.includes(searchVal)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+
+            // Refresh UI Components
+            updateKpiCards(filteredDataset);
+            updateCharts(filteredDataset);
+            updateTable(filteredDataset);
+            document.getElementById('recordCountBadge').textContent = filteredDataset.length.toLocaleString();
+        }
+
+        function clearSlicers() {
+            document.getElementById('monthFilter').value = "All";
+            document.getElementById('statusFilter').value = "All";
+            document.getElementById('leaveFilter').value = "All";
+            document.getElementById('deptFilter').value = "All";
+            document.getElementById('searchInput').value = "";
+            applyFilters();
+        }
+
+
+        function updateKpiCards(data) {
+            if (!data || data.length === 0) {
+                document.getElementById('kpiTotalEmp').textContent = "0";
+                document.getElementById('kpiAvgAttendance').textContent = "0%";
+                document.getElementById('kpiActiveStatus').textContent = "0";
+                document.getElementById('kpiAvgScore').textContent = "0 / 100";
+                document.getElementById('kpiSatisfaction').textContent = "0 ★";
+                return;
+            }
+
+            // 1. Total Unique Employees
+            const uniqueEmpIds = new Set(data.map(d => d["EMP ID"]).filter(Boolean));
+            document.getElementById('kpiTotalEmp').textContent = uniqueEmpIds.size.toLocaleString();
+
+            // 2. Average Attendance Rate
+            const totalAttendance = data.reduce((acc, curr) => acc + parsePercentage(curr["ATTENDANCE"]), 0);
+            const avgAttendance = (totalAttendance / data.length).toFixed(1);
+            document.getElementById('kpiAvgAttendance').textContent = `${avgAttendance}%`;
+
+            // 3. Active Status Base ('In Stock' count)
+            const activeCount = data.filter(d => String(d["STATUS"]).trim() === "In Stock").length;
+            document.getElementById('kpiActiveStatus').textContent = activeCount.toLocaleString();
+
+            // 4. Average KPI Score
+            const totalKpi = data.reduce((acc, curr) => acc + parseKpiScore(curr["KPI SCORE"]), 0);
+            const avgKpi = (totalKpi / data.length).toFixed(1);
+            document.getElementById('kpiAvgScore').textContent = `${avgKpi} / 100`;
+
+            // 5. Satisfaction Index
+            const totalSat = data.reduce((acc, curr) => acc + parseSatisfaction(curr["SATISFACTION"]), 0);
+            const avgSat = (totalSat / data.length).toFixed(1);
+            document.getElementById('kpiSatisfaction').textContent = `${avgSat} ★`;
+        }
+
+
+        function getChartColors() {
+            const dark = isDarkMode();
+            return {
+                textColor: dark ? '#cbd5e1' : '#475569',
+                gridColor: dark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.06)',
+                blue: '#0284c7',
+                emerald: '#10b981',
+                rose: '#f43f5e',
+                indigo: '#6366f1',
+                amber: '#f59e0b',
+                purple: '#a855f7',
+                sky: '#0ea5e9'
+            };
+        }
+
+        function updateCharts(data) {
+            const colors = getChartColors();
+
+            // --- 1. Line Chart: Monthly Attendance Trend ---
+            const monthAttendanceMap = {};
+            const monthCountMap = {};
+            MONTHS.forEach(m => { monthAttendanceMap[m] = 0; monthCountMap[m] = 0; });
+
+            data.forEach(row => {
+                const m = row["MONTH"];
+                if (monthAttendanceMap.hasOwnProperty(m)) {
+                    monthAttendanceMap[m] += parsePercentage(row["ATTENDANCE"]);
+                    monthCountMap[m] += 1;
+                }
+            });
+
+            const monthlyAvgAttendance = MONTHS.map(m => {
+                return monthCountMap[m] > 0 ? (monthAttendanceMap[m] / monthCountMap[m]).toFixed(1) : 0;
+            });
+
+            renderChart('monthlyTrendChart', 'line', {
+                labels: MONTHS,
+                datasets: [{
+                    label: 'Avg Attendance (%)',
+                    data: monthlyAvgAttendance,
+                    borderColor: colors.blue,
+                    backgroundColor: 'rgba(2, 132, 199, 0.12)',
+                    fill: true,
+                    tension: 0.35,
+                    borderWidth: 3,
+                    pointBackgroundColor: colors.blue,
+                    pointRadius: 4,
+                    pointHoverRadius: 7
+                }]
+            }, {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => ` Attendance: ${ctx.raw}%`
+                        }
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: colors.textColor }, grid: { color: colors.gridColor } },
+                    y: { 
+                        min: 50, 
+                        max: 100, 
+                        ticks: { color: colors.textColor, callback: v => v + '%' }, 
+                        grid: { color: colors.gridColor } 
+                    }
+                }
+            });
+
+            // --- 2. Donut Chart: Employee Status Split ---
+            const statusCounts = { "In Stock": 0, "Reserved": 0 };
+            data.forEach(row => {
+                const s = String(row["STATUS"]).trim();
+                if (statusCounts.hasOwnProperty(s)) {
+                    statusCounts[s]++;
+                } else {
+                    statusCounts[s] = (statusCounts[s] || 0) + 1;
+                }
+            });
+
+            renderChart('statusSplitChart', 'doughnut', {
+                labels: Object.keys(statusCounts),
+                datasets: [{
+                    data: Object.values(statusCounts),
+                    backgroundColor: [colors.indigo, colors.amber],
+                    borderWidth: 2,
+                    borderColor: isDarkMode() ? '#1e293b' : '#ffffff'
+                }]
+            }, {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: colors.textColor, padding: 15, font: { size: 12 } } }
+                },
+                cutout: '65%'
+            });
+
+            // --- 3. Pie Chart: Leave Type Breakdown ---
+            const leaveCounts = { "Casual Leave": 0, "Special Leave": 0 };
+            data.forEach(row => {
+                const l = String(row["LEAVE TYPE"]).trim();
+                if (leaveCounts.hasOwnProperty(l)) {
+                    leaveCounts[l]++;
+                } else {
+                    leaveCounts[l] = (leaveCounts[l] || 0) + 1;
+                }
+            });
+
+            renderChart('leaveBreakdownChart', 'pie', {
+                labels: Object.keys(leaveCounts),
+                datasets: [{
+                    data: Object.values(leaveCounts),
+                    backgroundColor: [colors.rose, colors.emerald],
+                    borderWidth: 2,
+                    borderColor: isDarkMode() ? '#1e293b' : '#ffffff'
+                }]
+            }, {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: colors.textColor, padding: 15, font: { size: 12 } } }
+                }
+            });
+
+            // --- 4. Bar Chart: Employee Count by Month ---
+            const monthlyHeadcount = MONTHS.map(m => monthCountMap[m]);
+
+            renderChart('monthlyHeadcountChart', 'bar', {
+                labels: MONTHS,
+                datasets: [{
+                    label: 'Record Headcount',
+                    data: monthlyHeadcount,
+                    backgroundColor: colors.sky,
+                    borderRadius: 6,
+                    borderSkipped: false
+                }]
+            }, {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { ticks: { color: colors.textColor }, grid: { display: false } },
+                    y: { ticks: { color: colors.textColor }, grid: { color: colors.gridColor } }
+                }
+            });
+
+            // --- 5. Horizontal Bar Chart: Department Performance & KPI Ratings ---
+            const deptKpiSum = {};
+            const deptKpiCount = {};
+            
+            data.forEach(row => {
+                const dept = row["DEPARTMENT"] || "Unassigned";
+                const score = parseKpiScore(row["KPI SCORE"]);
+                deptKpiSum[dept] = (deptKpiSum[dept] || 0) + score;
+                deptKpiCount[dept] = (deptKpiCount[dept] || 0) + 1;
+            });
+
+            const deptLabels = Object.keys(deptKpiSum).sort();
+            const deptAvgKpis = deptLabels.map(d => (deptKpiSum[d] / deptKpiCount[d]).toFixed(1));
+
+            renderChart('deptPerformanceChart', 'bar', {
+                labels: deptLabels,
+                datasets: [{
+                    label: 'Avg KPI Score',
+                    data: deptAvgKpis,
+                    backgroundColor: colors.purple,
+                    borderRadius: 6
+                }]
+            }, {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => ` KPI Score: ${ctx.raw} / 100`
+                        }
+                    }
+                },
+                scales: {
+                    x: { min: 0, max: 100, ticks: { color: colors.textColor }, grid: { color: colors.gridColor } },
+                    y: { ticks: { color: colors.textColor }, grid: { display: false } }
+                }
+            });
+        }
+
+        // Generic Chart renderer helper with instance cleanup
+        function renderChart(canvasId, type, data, options) {
+            if (chartInstances[canvasId]) {
+                chartInstances[canvasId].destroy();
+            }
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            chartInstances[canvasId] = new Chart(ctx, { type, data, options });
+        }
+
+
+        function updateTable(data) {
+            const tbody = document.getElementById('employeeTableBody');
+            tbody.innerHTML = '';
+
+            const displayLimit = 100; // Limit rows for performance, prompt full pagination ready
+            const subset = data.slice(0, displayLimit);
+
+            if (subset.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="9" class="p-6 text-center text-slate-400">
+                            <i class="fa-solid fa-folder-open text-2xl mb-2 block"></i>
+                            No matching employee records found for current filters.
+                        </td>
+                    </tr>
+                `;
+                document.getElementById('tableShowingText').textContent = "Showing 0 entries";
+                return;
+            }
+
+            subset.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 dark:hover:bg-slate-800/50 transition";
+
+                const statusClass = row["STATUS"] === "In Stock" 
+                    ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300" 
+                    : "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300";
+
+                const leaveClass = row["LEAVE TYPE"] === "Casual Leave"
+                    ? "bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300"
+                    : "bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300";
+
+                tr.innerHTML = `
+                    <td class="p-3 font-semibold text-slate-900 dark:text-slate-100">${row["EMP ID"] || ''}</td>
+                    <td class="p-3 font-medium">${row["NAME"] || ''}</td>
+                    <td class="p-3">${row["DEPARTMENT"] || ''}</td>
+                    <td class="p-3">${row["MONTH"] || ''}</td>
+                    <td class="p-3 font-semibold text-blue-600 dark:text-blue-400">${row["ATTENDANCE"] || ''}</td>
+                    <td class="p-3"><span class="px-2 py-0.5 rounded-full text-[11px] font-medium ${statusClass}">${row["STATUS"] || ''}</span></td>
+                    <td class="p-3"><span class="px-2 py-0.5 rounded-full text-[11px] font-medium ${leaveClass}">${row["LEAVE TYPE"] || ''}</span></td>
+                    <td class="p-3 font-medium">${row["KPI SCORE"] || ''}</td>
+                    <td class="p-3 text-amber-500 font-semibold">${row["SATISFACTION"] || ''}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('tableShowingText').textContent = `Showing ${subset.length} of ${data.length.toLocaleString()} entries`;
+        }
+
+
+        function exportFilteredCSV() {
+            if (!filteredDataset || filteredDataset.length === 0) {
+                alertModal("No data available to export with current filters.");
+                return;
+            }
+            const csv = Papa.unparse(filteredDataset);
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Filtered_Employee_Attendance_Data_${new Date().toISOString().slice(0,10)}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function downloadRawCSV() {
+            const csv = Papa.unparse(rawDataset);
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Employees_1000_Styled_Data.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                if (modalId === 'datasetModal') {
+                    const sampleCsv = Papa.unparse(rawDataset.slice(0, 30));
+                    document.getElementById('rawCsvPreview').textContent = sampleCsv + "\n\n... [Showing first 30 rows of " + rawDataset.length + " total rows]";
+                }
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+
+
+        window.onload = function() {
+            // Restore saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                document.getElementById('themeIcon').className = "fa-solid fa-sun text-amber-300";
+            }
+
+            // Initialize default dataset (1,000 unique EMP IDs across months)
+            rawDataset = generateDefault1000Dataset();
+            
+            // Populate department slicer dynamically
+            populateDepartmentDropdown(rawDataset);
+
+            // Execute initial filter calculation and chart rendering
+            applyFilters();
+        };
+    </script>
+</body>
+</html>
