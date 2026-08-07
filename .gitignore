@@ -1,0 +1,34 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor & IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Temporary & Log Files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Environment & Sensitive Files
+.env
+.env.local
+*.pem
+*.key
+
+# Python / Data Junk (if using local scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
